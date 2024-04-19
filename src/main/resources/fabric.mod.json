@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "pacocraft",
+	"version": "${version}",
+	"name": "Paco Craft",
+	"description": "This mod is Poliz-Friendly (non gioca da tanto).\nDio bo Marina!",
+	"authors": [
+		"DaveBalda"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/pacocraft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.davebalda.pacocraft.PacoCraft"
+		],
+		"client": [
+			"net.davebalda.pacocraft.PacoCraftClient"
+		],
+		"fabric-datagen": [
+			"net.davebalda.pacocraft.PacoCraftDataGenerator"
+		]
+	},
+	"mixins": [
+		"pacocraft.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
