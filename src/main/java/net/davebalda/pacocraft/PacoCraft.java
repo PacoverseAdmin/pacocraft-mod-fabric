@@ -1,5 +1,8 @@
 package net.davebalda.pacocraft;
 
+import net.davebalda.pacocraft.block.ModBlocks;
+import net.davebalda.pacocraft.item.ModItemGroups;
+import net.davebalda.pacocraft.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +14,8 @@ public class PacoCraft implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "pacocraft:etnite_block",
+    "pacocraft:etnite_ore",
+    "pacocraft:deepslate_etnite_ore"
+  ]
+}

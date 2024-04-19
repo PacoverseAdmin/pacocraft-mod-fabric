@@ -1,0 +1,14 @@
+{
+  "item.pacocraft.etnite_gem": "Etnite Gem",
+
+  "item.pacocraft.protein_shake": "Protein Shake",
+  "item.pacocraft.chechen_artichoke": "Chechen Artichoke",
+
+  "block.pacocraft.etnite_block": "Block of Etnite",
+  "block.pacocraft.etnite_ore": "Etnite Ore",
+  "block.pacocraft.deepslate_etnite_ore": "Deepslate Etnite Ore",
+
+  "itemgroup.pacocraft.items": "Paco Craft Items",
+  "itemgroup.pacocraft.tools": "Paco Craft Tools & Armor",
+  "itemgroup.pacocraft.blocks": "Paco Craft Blocks"
+}
