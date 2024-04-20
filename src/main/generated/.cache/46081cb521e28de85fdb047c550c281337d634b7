@@ -1,4 +1,5 @@
-// 1.20.4	2024-04-20T10:34:42.3473653	Paco Craft/Block Loot Tables
+// 1.20.4	2024-04-20T17:44:41.0926778	Paco Craft/Block Loot Tables
 d1b80b9bfd618c02b3b0538f4efa9a42fec5cbab data\pacocraft\loot_tables\blocks\etnite_block.json
 1c54481bdcac5959acafd1af7d78cb22e5aba09e data\pacocraft\loot_tables\blocks\etnite_ore.json
 f52f4716562de36ecc8969516a40c19353ae0d48 data\pacocraft\loot_tables\blocks\deepslate_etnite_ore.json
+ec83f3c6bd0a19a47b9e2a8338fc3fbe45eabdf2 data\pacocraft\loot_tables\blocks\chechen_artichoke_crop.json

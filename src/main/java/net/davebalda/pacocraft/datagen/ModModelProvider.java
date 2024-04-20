@@ -1,6 +1,7 @@
 package net.davebalda.pacocraft.datagen;
 
 import net.davebalda.pacocraft.block.ModBlocks;
+import net.davebalda.pacocraft.block.custom.ChechenArtichokeCropBlock;
 import net.davebalda.pacocraft.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -19,6 +20,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ETNITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ETNITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_ETNITE_ORE);
+
+        blockStateModelGenerator.registerCrop(ModBlocks.CHECHEN_ARTICHOKE_CROP,
+                ChechenArtichokeCropBlock.AGE, 0, 1, 2, 3);
     }
 
     @Override

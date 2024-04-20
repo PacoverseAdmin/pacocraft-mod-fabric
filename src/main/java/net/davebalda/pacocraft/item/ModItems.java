@@ -1,6 +1,7 @@
 package net.davebalda.pacocraft.item;
 
 import net.davebalda.pacocraft.PacoCraft;
+import net.davebalda.pacocraft.block.ModBlocks;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
@@ -13,7 +14,8 @@ public class ModItems {
     public static final Item ETNITE_GEM = registerItem("etnite_gem", new Item(new FabricItemSettings()));
     public static final Item PROTEIN_SHAKE = registerItem("protein_shake", new Item(new FabricItemSettings()
             .food(ModFoodComponents.PROTEIN_SHAKE)));
-    public static final Item CHECHEN_ARTICHOKE = registerItem("chechen_artichoke", new Item(new FabricItemSettings()
+    public static final Item CHECHEN_ARTICHOKE = registerItem("chechen_artichoke", new AliasedBlockItem(
+            ModBlocks.CHECHEN_ARTICHOKE_CROP, new FabricItemSettings()
             .food(ModFoodComponents.CHECHEN_ARTICHOKE)));
 
     //---- <MOD TOOL LIST> ----//

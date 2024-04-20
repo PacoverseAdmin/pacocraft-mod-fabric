@@ -1,6 +1,7 @@
 package net.davebalda.pacocraft.block;
 
 import net.davebalda.pacocraft.PacoCraft;
+import net.davebalda.pacocraft.block.custom.ChechenArtichokeCropBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -16,14 +17,21 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
 
+    //---- <MOD BLOCK LIST> ----//
     public static final Block ETNITE_BLOCK = registerBlock("etnite_block",
             new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK).mapColor(MapColor.RED)));
 
     public static final Block ETNITE_ORE = registerBlock("etnite_ore",
-            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5), FabricBlockSettings.copyOf(Blocks.EMERALD_ORE).mapColor(MapColor.RED)));
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5), FabricBlockSettings.copyOf(Blocks.EMERALD_ORE)
+                    .mapColor(MapColor.RED)));
 
     public static final Block DEEPSLATE_ETNITE_ORE = registerBlock("deepslate_etnite_ore",
-            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5), FabricBlockSettings.copyOf(Blocks.DEEPSLATE_EMERALD_ORE).mapColor(MapColor.RED)));
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5), FabricBlockSettings.copyOf(Blocks.DEEPSLATE_EMERALD_ORE)
+                    .mapColor(MapColor.RED)));
+
+    public static final Block CHECHEN_ARTICHOKE_CROP = Registry.register(Registries.BLOCK,
+            new Identifier(PacoCraft.MOD_ID, "chechen_artichoke_crop"),
+            new ChechenArtichokeCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
 
     //---- <METHODS ----//
     private static Block registerBlock(String name, Block block){
