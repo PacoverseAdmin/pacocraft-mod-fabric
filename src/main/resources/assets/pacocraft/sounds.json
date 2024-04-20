@@ -1,0 +1,18 @@
+{
+  "chechnya": {
+    "sounds": [
+      {
+        "name": "pacocraft:chechnya",
+        "stream": true
+      }
+    ]
+  },
+  "faccetta_nera": {
+    "sounds": [
+      {
+        "name": "pacocraft:faccetta_nera",
+        "stream": true
+      }
+    ]
+  }
+}

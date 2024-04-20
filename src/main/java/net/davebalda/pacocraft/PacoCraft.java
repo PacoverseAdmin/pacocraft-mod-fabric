@@ -3,6 +3,7 @@ package net.davebalda.pacocraft;
 import net.davebalda.pacocraft.block.ModBlocks;
 import net.davebalda.pacocraft.item.ModItemGroups;
 import net.davebalda.pacocraft.item.ModItems;
+import net.davebalda.pacocraft.sound.ModSounds;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -17,5 +18,6 @@ public class PacoCraft implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModSounds.registerSounds();
 	}
 }

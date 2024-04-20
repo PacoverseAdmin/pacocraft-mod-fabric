@@ -30,7 +30,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ETNITE_GEM, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.PROTEIN_SHAKE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.CHECHEN_ARTICHOKE, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.MUSIC_DISC_CHECHNYA, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MUSIC_DISC_FACCETTA_NERA, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.ETNITE_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ETNITE_PICKAXE, Models.HANDHELD);

@@ -20,5 +20,9 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.ETNITE_CHESTPLATE)
                 .add(ModItems.ETNITE_LEGGINGS)
                 .add(ModItems.ETNITE_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.MUSIC_DISCS)
+                .add(ModItems.MUSIC_DISC_FACCETTA_NERA)
+                .add(ModItems.MUSIC_DISC_CHECHNYA);
     }
 }

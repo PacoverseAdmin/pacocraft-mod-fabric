@@ -2,11 +2,13 @@ package net.davebalda.pacocraft.item;
 
 import net.davebalda.pacocraft.PacoCraft;
 import net.davebalda.pacocraft.block.ModBlocks;
+import net.davebalda.pacocraft.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 
 public class ModItems {
 
@@ -17,6 +19,14 @@ public class ModItems {
     public static final Item CHECHEN_ARTICHOKE = registerItem("chechen_artichoke", new AliasedBlockItem(
             ModBlocks.CHECHEN_ARTICHOKE_CROP, new FabricItemSettings()
             .food(ModFoodComponents.CHECHEN_ARTICHOKE)));
+
+    //---- <MOD DISC LIST> ----//
+    public static final Item MUSIC_DISC_FACCETTA_NERA = registerItem("music_disc_faccetta_nera",
+            new MusicDiscItem(7, ModSounds.FACCETTA_NERA, new FabricItemSettings()
+                    .maxCount(1).rarity(Rarity.RARE), 138));
+    public static final Item MUSIC_DISC_CHECHNYA = registerItem("music_disc_chechnya",
+            new MusicDiscItem(7, ModSounds.CHECHNYA, new FabricItemSettings()
+                    .maxCount(1).rarity(Rarity.RARE), 186));
 
     //---- <MOD TOOL LIST> ----//
     public static final Item ETNITE_SWORD = registerItem("etnite_sword",

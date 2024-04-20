@@ -24,6 +24,8 @@ public class ModItemGroups {
                         entries.add(ModItems.ETNITE_GEM);
                         entries.add(ModItems.PROTEIN_SHAKE);
                         entries.add(ModItems.CHECHEN_ARTICHOKE);
+                        entries.add(ModItems.MUSIC_DISC_FACCETTA_NERA);
+                        entries.add(ModItems.MUSIC_DISC_CHECHNYA);
 
                     }).build());
 
