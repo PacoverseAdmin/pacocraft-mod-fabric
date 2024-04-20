@@ -28,6 +28,16 @@ public class ModItems {
     public static final Item ETNITE_HOE = registerItem("etnite_hoe",
             new HoeItem(ModToolMaterial.ETNITE, -2, -1.0f, new FabricItemSettings()));
 
+    //---- <MOD ARMOR LIST> ----//
+    public static final Item ETNITE_HELMET = registerItem("etnite_helmet",
+            new ArmorItem(ModArmorMaterial.ETNITE, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item ETNITE_CHESTPLATE = registerItem("etnite_chestplate",
+            new ArmorItem(ModArmorMaterial.ETNITE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item ETNITE_LEGGINGS = registerItem("etnite_leggings",
+            new ArmorItem(ModArmorMaterial.ETNITE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item ETNITE_BOOTS = registerItem("etnite_boots",
+            new ArmorItem(ModArmorMaterial.ETNITE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
 
     //--- <METHODS> ---//
     private static Item registerItem(String name, Item item){

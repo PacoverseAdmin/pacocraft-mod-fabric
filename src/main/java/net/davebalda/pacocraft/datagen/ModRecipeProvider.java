@@ -92,5 +92,35 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('S', Items.STICK)
                 .criterion(hasItem(ModItems.ETNITE_GEM), conditionsFromItem(ModItems.ETNITE_GEM))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.ETNITE_HOE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ETNITE_HELMET, 1)
+                .pattern("EEE")
+                .pattern("E E")
+                .input('E', ModItems.ETNITE_GEM)
+                .criterion(hasItem(ModItems.ETNITE_GEM), conditionsFromItem(ModItems.ETNITE_GEM))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ETNITE_HELMET)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ETNITE_CHESTPLATE, 1)
+                .pattern("E E")
+                .pattern("EEE")
+                .pattern("EEE")
+                .input('E', ModItems.ETNITE_GEM)
+                .criterion(hasItem(ModItems.ETNITE_GEM), conditionsFromItem(ModItems.ETNITE_GEM))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ETNITE_CHESTPLATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ETNITE_LEGGINGS, 1)
+                .pattern("EEE")
+                .pattern("E E")
+                .pattern("E E")
+                .input('E', ModItems.ETNITE_GEM)
+                .criterion(hasItem(ModItems.ETNITE_GEM), conditionsFromItem(ModItems.ETNITE_GEM))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ETNITE_LEGGINGS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ETNITE_BOOTS, 1)
+                .pattern("E E")
+                .pattern("E E")
+                .input('E', ModItems.ETNITE_GEM)
+                .criterion(hasItem(ModItems.ETNITE_GEM), conditionsFromItem(ModItems.ETNITE_GEM))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ETNITE_BOOTS)));
     }
 }

@@ -38,6 +38,10 @@ public class ModItemGroups {
                         entries.add(ModItems.ETNITE_AXE);
                         entries.add(ModItems.ETNITE_SHOVEL);
                         entries.add(ModItems.ETNITE_HOE);
+                        entries.add(ModItems.ETNITE_HELMET);
+                        entries.add(ModItems.ETNITE_CHESTPLATE);
+                        entries.add(ModItems.ETNITE_LEGGINGS);
+                        entries.add(ModItems.ETNITE_BOOTS);
 
                     }).build());
 
