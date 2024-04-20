@@ -47,5 +47,50 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.ETNITE_GEM), conditionsFromItem(ModItems.ETNITE_GEM))
                 .criterion(hasItem(ModBlocks.ETNITE_BLOCK), conditionsFromItem(ModBlocks.ETNITE_BLOCK))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.ETNITE_GEM)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ETNITE_SWORD, 1)
+                .pattern("E")
+                .pattern("E")
+                .pattern("S")
+                .input('E', ModItems.ETNITE_GEM)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.ETNITE_GEM), conditionsFromItem(ModItems.ETNITE_GEM))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ETNITE_SWORD)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ETNITE_PICKAXE, 1)
+                .pattern("EEE")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('E', ModItems.ETNITE_GEM)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.ETNITE_GEM), conditionsFromItem(ModItems.ETNITE_GEM))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ETNITE_PICKAXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ETNITE_AXE, 1)
+                .pattern("EE")
+                .pattern("SE")
+                .pattern("S ")
+                .input('E', ModItems.ETNITE_GEM)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.ETNITE_GEM), conditionsFromItem(ModItems.ETNITE_GEM))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ETNITE_AXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ETNITE_SHOVEL, 1)
+                .pattern("E")
+                .pattern("S")
+                .pattern("S")
+                .input('E', ModItems.ETNITE_GEM)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.ETNITE_GEM), conditionsFromItem(ModItems.ETNITE_GEM))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ETNITE_SHOVEL)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ETNITE_HOE, 1)
+                .pattern("EE")
+                .pattern("S ")
+                .pattern("S ")
+                .input('E', ModItems.ETNITE_GEM)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.ETNITE_GEM), conditionsFromItem(ModItems.ETNITE_GEM))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ETNITE_HOE)));
     }
 }

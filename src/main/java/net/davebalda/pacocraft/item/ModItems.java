@@ -2,7 +2,7 @@ package net.davebalda.pacocraft.item;
 
 import net.davebalda.pacocraft.PacoCraft;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.item.Item;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -15,6 +15,18 @@ public class ModItems {
             .food(ModFoodComponents.PROTEIN_SHAKE)));
     public static final Item CHECHEN_ARTICHOKE = registerItem("chechen_artichoke", new Item(new FabricItemSettings()
             .food(ModFoodComponents.CHECHEN_ARTICHOKE)));
+
+    //---- <MOD TOOL LIST> ----//
+    public static final Item ETNITE_SWORD = registerItem("etnite_sword",
+            new SwordItem(ModToolMaterial.ETNITE, 4, -2.4f, new FabricItemSettings()));
+    public static final Item ETNITE_PICKAXE = registerItem("etnite_pickaxe",
+            new PickaxeItem(ModToolMaterial.ETNITE, 1, -2.8f, new FabricItemSettings()));
+    public static final Item ETNITE_AXE = registerItem("etnite_axe",
+            new AxeItem(ModToolMaterial.ETNITE, 7.0f, -3.1f, new FabricItemSettings()));
+    public static final Item ETNITE_SHOVEL = registerItem("etnite_shovel",
+            new ShovelItem(ModToolMaterial.ETNITE, 1.5f, -3.0f, new FabricItemSettings()));
+    public static final Item ETNITE_HOE = registerItem("etnite_hoe",
+            new HoeItem(ModToolMaterial.ETNITE, -2, -1.0f, new FabricItemSettings()));
 
 
     //--- <METHODS> ---//

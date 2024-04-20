@@ -30,10 +30,14 @@ public class ModItemGroups {
     public static final ItemGroup TOOLS_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(PacoCraft.MOD_ID, "tools"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.pacocraft.tools"))
-                    .icon(() -> new ItemStack(Items.BARRIER)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModItems.ETNITE_PICKAXE)).entries((displayContext, entries) -> {
 
                         //Entries for "Paco Craft Tools & Armor" tab
-                        entries.add(Blocks.BARRIER);
+                        entries.add(ModItems.ETNITE_SWORD);
+                        entries.add(ModItems.ETNITE_PICKAXE);
+                        entries.add(ModItems.ETNITE_AXE);
+                        entries.add(ModItems.ETNITE_SHOVEL);
+                        entries.add(ModItems.ETNITE_HOE);
 
                     }).build());
 

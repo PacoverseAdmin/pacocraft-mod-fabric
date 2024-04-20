@@ -23,7 +23,14 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.ETNITE_GEM, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.PROTEIN_SHAKE, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHECHEN_ARTICHOKE, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.ETNITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ETNITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ETNITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ETNITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ETNITE_HOE, Models.HANDHELD);
     }
 }
