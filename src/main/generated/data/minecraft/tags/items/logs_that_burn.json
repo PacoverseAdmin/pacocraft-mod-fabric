@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "pacocraft:orlegno_log",
+    "pacocraft:stripped_orlegno_log",
+    "pacocraft:orlegno_wood",
+    "pacocraft:stripped_orlegno_wood"
+  ]
+}

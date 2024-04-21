@@ -56,6 +56,12 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ETNITE_BLOCK);
                         entries.add(ModBlocks.ETNITE_ORE);
                         entries.add(ModBlocks.DEEPSLATE_ETNITE_ORE);
+                        entries.add(ModBlocks.ORLEGNO_LOG);
+                        entries.add(ModBlocks.ORLEGNO_WOOD);
+                        entries.add(ModBlocks.STRIPPED_ORLEGNO_LOG);
+                        entries.add(ModBlocks.STRIPPED_ORLEGNO_WOOD);
+                        entries.add(ModBlocks.ORLEGNO_PLANKS);
+                        entries.add(ModBlocks.ORLEGNO_LEAVES);
 
                     }).build());
 

@@ -1,3 +1,6 @@
-// 1.20.4	2024-04-20T18:34:56.7011953	Paco Craft/Tags for minecraft:item
+// 1.20.4	2024-04-21T14:29:32.6439285	Paco Craft/Tags for minecraft:item
+b21e403ff38c9bf65404c48404f11a7856c02587 data\minecraft\tags\items\logs_that_burn.json
 60f6c1218f7f677a4d8dfd45bd80aa801a005e9f data\minecraft\tags\items\trimmable_armor.json
 2c11df6c398442c3070e5d019ea68257bf877fee data\minecraft\tags\items\music_discs.json
+ff59cd49ad9f13482f6c2230108514ea7b27b099 data\minecraft\tags\items\planks.json
+f2baa6a5ce819471326610e4deea7d80c830d3bd data\pacocraft\tags\items\orlegno_logs.json

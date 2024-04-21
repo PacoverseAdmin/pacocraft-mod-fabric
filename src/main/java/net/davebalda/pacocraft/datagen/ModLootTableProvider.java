@@ -26,5 +26,13 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                 ModItems.CHECHEN_ARTICHOKE,
                 ModItems.CHECHEN_ARTICHOKE,
                 builder));
+
+        addDrop(ModBlocks.ORLEGNO_LOG);
+        addDrop(ModBlocks.ORLEGNO_WOOD);
+        addDrop(ModBlocks.STRIPPED_ORLEGNO_LOG);
+        addDrop(ModBlocks.STRIPPED_ORLEGNO_WOOD);
+        addDrop(ModBlocks.ORLEGNO_PLANKS);
+
+        addDrop(ModBlocks.ORLEGNO_LEAVES, leavesDrops(ModBlocks.ORLEGNO_LEAVES, ModBlocks.DEEPSLATE_ETNITE_ORE, 0.0025f)); //TODO
     }
 }
