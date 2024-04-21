@@ -23,6 +23,13 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerCrop(ModBlocks.CHECHEN_ARTICHOKE_CROP,
                 ChechenArtichokeCropBlock.AGE, 0, 1, 2, 3);
+
+        blockStateModelGenerator.registerLog(ModBlocks.ORLEGNO_LOG)
+                .log(ModBlocks.ORLEGNO_LOG).wood(ModBlocks.ORLEGNO_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_ORLEGNO_LOG)
+                .log(ModBlocks.STRIPPED_ORLEGNO_LOG).wood(ModBlocks.STRIPPED_ORLEGNO_WOOD);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ORLEGNO_PLANKS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ORLEGNO_LEAVES);
     }
 
     @Override

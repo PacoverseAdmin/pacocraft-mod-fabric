@@ -4,10 +4,7 @@ import net.davebalda.pacocraft.PacoCraft;
 import net.davebalda.pacocraft.block.custom.ChechenArtichokeCropBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.ExperienceDroppingBlock;
-import net.minecraft.block.MapColor;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -32,6 +29,19 @@ public class ModBlocks {
     public static final Block CHECHEN_ARTICHOKE_CROP = Registry.register(Registries.BLOCK,
             new Identifier(PacoCraft.MOD_ID, "chechen_artichoke_crop"),
             new ChechenArtichokeCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+
+    public static final Block ORLEGNO_LOG = registerBlock("orlegno_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG)));
+    public static final Block ORLEGNO_WOOD = registerBlock("orlegno_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD)));
+    public static final Block STRIPPED_ORLEGNO_LOG = registerBlock("stripped_orlegno_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG)));
+    public static final Block STRIPPED_ORLEGNO_WOOD = registerBlock("stripped_orlegno_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD)));
+    public static final Block ORLEGNO_PLANKS = registerBlock("orlegno_planks",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+    public static final Block ORLEGNO_LEAVES = registerBlock("orlegno_leaves",
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).nonOpaque()));
 
     //---- <METHODS ----//
     private static Block registerBlock(String name, Block block){

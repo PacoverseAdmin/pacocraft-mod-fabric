@@ -1,6 +1,7 @@
 package net.davebalda.pacocraft.datagen;
 
 import net.davebalda.pacocraft.block.ModBlocks;
+import net.davebalda.pacocraft.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryKeys;
@@ -44,6 +45,20 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL);
 
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")));
+
+
+        //---- <WOOD CREATION> ----//
+        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.ORLEGNO_LOG)
+                .add(ModBlocks.STRIPPED_ORLEGNO_LOG)
+                .add(ModBlocks.ORLEGNO_WOOD)
+                .add(ModBlocks.STRIPPED_ORLEGNO_WOOD);
+
+        getOrCreateTagBuilder(ModTags.Blocks.ORLEGNO_LOGS)
+                .add(ModBlocks.ORLEGNO_LOG)
+                .add(ModBlocks.STRIPPED_ORLEGNO_LOG)
+                .add(ModBlocks.ORLEGNO_WOOD)
+                .add(ModBlocks.STRIPPED_ORLEGNO_WOOD);
 
     }
 }

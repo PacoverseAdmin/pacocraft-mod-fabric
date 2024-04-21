@@ -23,6 +23,13 @@
   "block.pacocraft.etnite_ore": "Etnite Ore",
   "block.pacocraft.deepslate_etnite_ore": "Deepslate Etnite Ore",
 
+  "block.pacocraft.orlegno_log": "Orlegno Log",
+  "block.pacocraft.orlegno_wood": "Orlegno Wood",
+  "block.pacocraft.stripped_orlegno_log": "Stripped Orlegno Log",
+  "block.pacocraft.stripped_orlegno_wood": "Stripped Orlegno Wood",
+  "block.pacocraft.orlegno_planks": "Orlegno Planks",
+  "block.pacocraft.orlegno_leaves": "Orlegno Leaves",
+
   "itemgroup.pacocraft.items": "Paco Craft Items",
   "itemgroup.pacocraft.tools": "Paco Craft Tools & Armor",
   "itemgroup.pacocraft.blocks": "Paco Craft Blocks"

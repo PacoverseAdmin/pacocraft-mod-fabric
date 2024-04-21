@@ -1,4 +1,4 @@
-// 1.20.4	2024-04-20T18:34:56.6981954	Paco Craft/Recipes
+// 1.20.4	2024-04-21T14:29:32.6409284	Paco Craft/Recipes
 e1a6af492f39398aaf44b78f11e5de83f60596db data\pacocraft\advancements\recipes\combat\etnite_chestplate.json
 36b36edc2353ead7cec2df13b14dbe7f8bea027f data\pacocraft\recipes\etnite_pickaxe.json
 52a6a46b42894a2f5f18bf78f4e3d7db0d78bee8 data\pacocraft\advancements\recipes\misc\etnite_gem.json
@@ -19,6 +19,8 @@ a6c7360b2c08209ce8a7e78d73f7413ed022ecae data\pacocraft\recipes\protein_shake.js
 bb02834cf6bc15f1b12ff110e46943e6a716232a data\pacocraft\advancements\recipes\tools\etnite_pickaxe.json
 4efe61518dddd64f08e78cf22f4fd17281d54c93 data\pacocraft\recipes\etnite_sword.json
 62aecdea7fe912e1f72bab90934ea3d2729710ee data\pacocraft\advancements\recipes\tools\etnite_shovel.json
+f457b846ed43a26f0ff38ed1492d325d91aecbdc data\pacocraft\recipes\orlegno_planks.json
+3c8c16248da9d91d28cb908c598d3ca9408ebc66 data\pacocraft\advancements\recipes\building_blocks\orlegno_planks.json
 5449a2d67156b19ccec1a5182bfc55db89fb46cb data\pacocraft\recipes\etnite_helmet.json
 e06ba6fe66a78ea828bbbb06d8277887a3af8cd5 data\pacocraft\advancements\recipes\combat\etnite_leggings.json
 65c2a0822cde6f542ffea6089c3b2c10a1d477bb data\pacocraft\recipes\etnite_shovel.json

@@ -2,6 +2,7 @@ package net.davebalda.pacocraft.datagen;
 
 import net.davebalda.pacocraft.block.ModBlocks;
 import net.davebalda.pacocraft.item.ModItems;
+import net.davebalda.pacocraft.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
@@ -9,6 +10,7 @@ import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
@@ -47,6 +49,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.ETNITE_GEM), conditionsFromItem(ModItems.ETNITE_GEM))
                 .criterion(hasItem(ModBlocks.ETNITE_BLOCK), conditionsFromItem(ModBlocks.ETNITE_BLOCK))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.ETNITE_GEM)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORLEGNO_PLANKS, 4)
+                .input(ModTags.Items.ORLEGNO_LOGS)
+                .criterion(hasItem(ModBlocks.ORLEGNO_PLANKS), conditionsFromItem(ModBlocks.ORLEGNO_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ORLEGNO_PLANKS)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ETNITE_SWORD, 1)
                 .pattern("E")

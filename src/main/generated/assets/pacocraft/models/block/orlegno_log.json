@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "pacocraft:block/orlegno_log_top",
+    "side": "pacocraft:block/orlegno_log"
+  }
+}
