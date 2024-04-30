@@ -1,4 +1,4 @@
-// 1.20.4	2024-04-21T14:29:32.6469295	Paco Craft/Block Loot Tables
+// 1.20.4	2024-04-30T14:11:03.0603377	Paco Craft/Block Loot Tables
 91c3636af7a9a1e0d3d2feebd39e58166012343d data\pacocraft\loot_tables\blocks\orlegno_planks.json
 d1b80b9bfd618c02b3b0538f4efa9a42fec5cbab data\pacocraft\loot_tables\blocks\etnite_block.json
 bd83ed2fcb74bcb1938b2bb8c03ab16464e80a42 data\pacocraft\loot_tables\blocks\orlegno_log.json
@@ -7,5 +7,5 @@ f52f4716562de36ecc8969516a40c19353ae0d48 data\pacocraft\loot_tables\blocks\deeps
 ec83f3c6bd0a19a47b9e2a8338fc3fbe45eabdf2 data\pacocraft\loot_tables\blocks\chechen_artichoke_crop.json
 bc2e42b1329b76960e4ea8304871d594ddee5ce8 data\pacocraft\loot_tables\blocks\orlegno_wood.json
 32bb821cf9399426a7ffabba39dc169cddeb18b4 data\pacocraft\loot_tables\blocks\orlegno_leaves.json
-6900cb1d163d714529e8db2d66a72d54480aa34b data\pacocraft\loot_tables\blocks\stripped_orlegno_wood.json
 1d95fcc20d723d7e1254329237557abeaa8bbbf2 data\pacocraft\loot_tables\blocks\stripped_orlegno_log.json
+6900cb1d163d714529e8db2d66a72d54480aa34b data\pacocraft\loot_tables\blocks\stripped_orlegno_wood.json

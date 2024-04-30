@@ -26,6 +26,7 @@ public class ModItemGroups {
                         entries.add(ModItems.CHECHEN_ARTICHOKE);
                         entries.add(ModItems.MUSIC_DISC_FACCETTA_NERA);
                         entries.add(ModItems.MUSIC_DISC_CHECHNYA);
+                        entries.add(ModItems.GIANGOLEM_SPAWN_EGG);
 
                     }).build());
 

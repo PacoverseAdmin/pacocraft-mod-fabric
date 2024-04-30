@@ -1,6 +1,6 @@
-// 1.20.4	2024-04-21T14:29:32.6449287	Paco Craft/Model Definitions
-7aa9e4689bc565cab6d2206843c76f91bcf1d1d5 assets\pacocraft\models\block\chechen_artichoke_crop_stage2.json
+// 1.20.4	2024-04-30T14:11:03.0583356	Paco Craft/Model Definitions
 3a1d42ac862e85fcbdef8b5e6037cb994c05d275 assets\pacocraft\models\item\etnite_chestplate_redstone_trim.json
+7aa9e4689bc565cab6d2206843c76f91bcf1d1d5 assets\pacocraft\models\block\chechen_artichoke_crop_stage2.json
 6ab66b73d604a9cc6ed016dd7e3eaa350b358d4b assets\pacocraft\blockstates\stripped_orlegno_log.json
 d73bea3ece5bf29f8c233b2a4d63be9140feab03 assets\pacocraft\models\block\etnite_block.json
 52a61db717bf9115e8b840e9dcd20cf8bc5d86bf assets\pacocraft\models\block\stripped_orlegno_wood.json
@@ -60,9 +60,10 @@ eb466bd0959f07d754ba82f53967caff969a2505 assets\pacocraft\models\block\chechen_a
 adc5e1883c4f1e98be68f64a5bde904e08ed4b28 assets\pacocraft\models\item\etnite_leggings_diamond_trim.json
 e5c8034a9113f8d97ef43b9cf8a073efca0e6a89 assets\pacocraft\models\item\etnite_chestplate_quartz_trim.json
 7efc4cf455907344f05a99ba9f8a031f7cc2f06b assets\pacocraft\models\item\etnite_block.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets\pacocraft\models\item\giangolem_spawn_egg.json
 35f439d3b4deb59f1ce0ef432be42b6577b4374f assets\pacocraft\models\item\etnite_helmet_diamond_trim.json
-1d961238b15b1dc871719223dfd893ffb8eec08c assets\pacocraft\models\item\etnite_helmet.json
 90e48460fd8cc9d7393b464a3acc6df4e5f61039 assets\pacocraft\models\item\etnite_pickaxe.json
+1d961238b15b1dc871719223dfd893ffb8eec08c assets\pacocraft\models\item\etnite_helmet.json
 3d7834adde37396a52dc8f3b91400dd1de7848fc assets\pacocraft\models\item\etnite_helmet_redstone_trim.json
 266f1eed10c5f243d96b88e5fa73b28af2eafbf0 assets\pacocraft\models\item\etnite_gem.json
 b4d50e90e3b750b1751481abafba4c17cb452f00 assets\pacocraft\models\item\etnite_helmet_amethyst_trim.json

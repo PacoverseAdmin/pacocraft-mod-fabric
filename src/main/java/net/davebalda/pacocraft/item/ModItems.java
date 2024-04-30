@@ -2,6 +2,7 @@ package net.davebalda.pacocraft.item;
 
 import net.davebalda.pacocraft.PacoCraft;
 import net.davebalda.pacocraft.block.ModBlocks;
+import net.davebalda.pacocraft.entity.ModEntities;
 import net.davebalda.pacocraft.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.*;
@@ -19,6 +20,10 @@ public class ModItems {
     public static final Item CHECHEN_ARTICHOKE = registerItem("chechen_artichoke", new AliasedBlockItem(
             ModBlocks.CHECHEN_ARTICHOKE_CROP, new FabricItemSettings()
             .food(ModFoodComponents.CHECHEN_ARTICHOKE)));
+
+    //---- <MOD MOBS LIST> ----//
+    public static final Item GIANGOLEM_SPAWN_EGG = registerItem("giangolem_spawn_egg",
+            new SpawnEggItem(ModEntities.GIANGOLEM, 0xf2f5f3, 0x181a19, new FabricItemSettings()));
 
     //---- <MOD DISC LIST> ----//
     public static final Item MUSIC_DISC_FACCETTA_NERA = registerItem("music_disc_faccetta_nera",
