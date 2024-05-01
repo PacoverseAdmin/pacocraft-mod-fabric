@@ -9,6 +9,7 @@ import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
@@ -54,6 +55,39 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(ModTags.Items.ORLEGNO_LOGS)
                 .criterion(hasItem(ModBlocks.ORLEGNO_PLANKS), conditionsFromItem(ModBlocks.ORLEGNO_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ORLEGNO_PLANKS)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORLEGNO_BUTTON, 1)
+                .input(ModBlocks.ORLEGNO_PLANKS)
+                .criterion(hasItem(ModBlocks.ORLEGNO_PLANKS), conditionsFromItem(ModBlocks.ORLEGNO_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ORLEGNO_BUTTON)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORLEGNO_SLAB, Ingredient.ofItems(ModBlocks.ORLEGNO_PLANKS))
+                .criterion(hasItem(ModBlocks.ORLEGNO_PLANKS), conditionsFromItem(ModBlocks.ORLEGNO_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ORLEGNO_SLAB)));
+
+        createStairsRecipe(ModBlocks.ORLEGNO_STAIRS, Ingredient.ofItems(ModBlocks.ORLEGNO_PLANKS))
+                .criterion(hasItem(ModBlocks.ORLEGNO_PLANKS), conditionsFromItem(ModBlocks.ORLEGNO_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ORLEGNO_STAIRS)));
+
+        createPressurePlateRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORLEGNO_PRESSURE_PLATE, Ingredient.ofItems(ModBlocks.ORLEGNO_PLANKS))
+                .criterion(hasItem(ModBlocks.ORLEGNO_PLANKS), conditionsFromItem(ModBlocks.ORLEGNO_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ORLEGNO_PRESSURE_PLATE)));
+
+        createFenceRecipe(ModBlocks.ORLEGNO_FENCE, Ingredient.ofItems(ModBlocks.ORLEGNO_PLANKS))
+                .criterion(hasItem(ModBlocks.ORLEGNO_PLANKS), conditionsFromItem(ModBlocks.ORLEGNO_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ORLEGNO_FENCE)));
+
+        createFenceGateRecipe(ModBlocks.ORLEGNO_FENCE_GATE, Ingredient.ofItems(ModBlocks.ORLEGNO_PLANKS))
+                .criterion(hasItem(ModBlocks.ORLEGNO_PLANKS), conditionsFromItem(ModBlocks.ORLEGNO_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ORLEGNO_FENCE_GATE)));
+
+        createDoorRecipe(ModBlocks.ORLEGNO_DOOR, Ingredient.ofItems(ModBlocks.ORLEGNO_PLANKS))
+                .criterion(hasItem(ModBlocks.ORLEGNO_PLANKS), conditionsFromItem(ModBlocks.ORLEGNO_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ORLEGNO_DOOR)));
+
+        createTrapdoorRecipe(ModBlocks.ORLEGNO_TRAPDOOR, Ingredient.ofItems(ModBlocks.ORLEGNO_PLANKS))
+                .criterion(hasItem(ModBlocks.ORLEGNO_PLANKS), conditionsFromItem(ModBlocks.ORLEGNO_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ORLEGNO_TRAPDOOR)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ETNITE_SWORD, 1)
                 .pattern("E")

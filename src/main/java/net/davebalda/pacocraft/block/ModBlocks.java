@@ -42,6 +42,23 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
     public static final Block ORLEGNO_LEAVES = registerBlock("orlegno_leaves",
             new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).nonOpaque()));
+    public static final Block ORLEGNO_STAIRS = registerBlock("orlegno_stairs",
+            new StairsBlock(ModBlocks.ORLEGNO_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_STAIRS)));
+    public static final Block ORLEGNO_SLAB = registerBlock("orlegno_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_SLAB)));
+    public static final Block ORLEGNO_BUTTON = registerBlock("orlegno_button",
+            new ButtonBlock(BlockSetType.OAK, 30, FabricBlockSettings.copyOf(Blocks.OAK_BUTTON)));
+    public static final Block ORLEGNO_PRESSURE_PLATE = registerBlock("orlegno_pressure_plate",
+            new PressurePlateBlock(BlockSetType.OAK, FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE)));
+    public static final Block ORLEGNO_FENCE = registerBlock("orlegno_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE)));
+    public static final Block ORLEGNO_FENCE_GATE = registerBlock("orlegno_fence_gate",
+            new FenceGateBlock(WoodType.OAK, FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE)));
+    public static final Block ORLEGNO_DOOR = registerBlock("orlegno_door",
+            new DoorBlock(BlockSetType.OAK, FabricBlockSettings.copyOf(Blocks.OAK_DOOR)));
+    public static final Block ORLEGNO_TRAPDOOR = registerBlock("orlegno_trapdoor",
+            new TrapdoorBlock(BlockSetType.OAK, FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR)));
+
 
     //---- <METHODS ----//
     private static Block registerBlock(String name, Block block){

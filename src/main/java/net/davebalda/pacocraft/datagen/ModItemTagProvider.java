@@ -6,6 +6,7 @@ import net.davebalda.pacocraft.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
@@ -41,5 +42,29 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.ORLEGNO_WOOD.asItem())
                 .add(ModBlocks.STRIPPED_ORLEGNO_LOG.asItem())
                 .add(ModBlocks.STRIPPED_ORLEGNO_WOOD.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WOODEN_FENCES)
+                .add(ModBlocks.ORLEGNO_FENCE.asItem());
+
+        getOrCreateTagBuilder(ItemTags.FENCE_GATES)
+                .add(ModBlocks.ORLEGNO_FENCE_GATE.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WOODEN_SLABS)
+                .add(ModBlocks.ORLEGNO_SLAB.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WOODEN_STAIRS)
+                .add(ModBlocks.ORLEGNO_STAIRS.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WOODEN_PRESSURE_PLATES)
+                .add(ModBlocks.ORLEGNO_PRESSURE_PLATE.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WOODEN_BUTTONS)
+                .add(ModBlocks.ORLEGNO_BUTTON.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WOODEN_DOORS)
+                .add(ModBlocks.ORLEGNO_DOOR.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WOODEN_TRAPDOORS)
+                .add(ModBlocks.ORLEGNO_TRAPDOOR.asItem());
     }
 }

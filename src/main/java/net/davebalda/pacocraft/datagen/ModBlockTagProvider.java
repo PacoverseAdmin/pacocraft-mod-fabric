@@ -60,5 +60,28 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ORLEGNO_WOOD)
                 .add(ModBlocks.STRIPPED_ORLEGNO_WOOD);
 
+        getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
+                .add(ModBlocks.ORLEGNO_FENCE);
+
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.ORLEGNO_FENCE_GATE);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_SLABS)
+                .add(ModBlocks.ORLEGNO_SLAB);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
+                .add(ModBlocks.ORLEGNO_STAIRS);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_PRESSURE_PLATES)
+                .add(ModBlocks.ORLEGNO_PRESSURE_PLATE);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_BUTTONS)
+                .add(ModBlocks.ORLEGNO_BUTTON);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
+                .add(ModBlocks.ORLEGNO_DOOR);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS)
+                .add(ModBlocks.ORLEGNO_TRAPDOOR);
     }
 }

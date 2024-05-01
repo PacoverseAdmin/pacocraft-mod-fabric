@@ -34,9 +34,12 @@ public class PacoCraft implements ModInitializer {
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ORLEGNO_WOOD, 5, 5);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_ORLEGNO_LOG, 5, 5);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_ORLEGNO_WOOD, 5, 5);
-
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ORLEGNO_PLANKS, 5, 20);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ORLEGNO_LEAVES, 30, 60);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ORLEGNO_SLAB, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ORLEGNO_FENCE_GATE, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ORLEGNO_FENCE, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ORLEGNO_STAIRS, 5, 20);
 
 		FabricDefaultAttributeRegistry.register(ModEntities.GIANGOLEM, GiangolemEntity.createGiangolemAttributes());
 	}

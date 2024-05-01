@@ -31,8 +31,18 @@
   "block.pacocraft.stripped_orlegno_wood": "Stripped Orlegno Wood",
   "block.pacocraft.orlegno_planks": "Orlegno Planks",
   "block.pacocraft.orlegno_leaves": "Orlegno Leaves",
+  "block.pacocraft.orlegno_stairs": "Orlegno Stairs",
+  "block.pacocraft.orlegno_slab": "Orlegno Slab",
+  "block.pacocraft.orlegno_button": "Orlegno Button",
+  "block.pacocraft.orlegno_pressure_plate": "Orlegno Pressure Plate",
+  "block.pacocraft.orlegno_fence": "Orlegno Fence",
+  "block.pacocraft.orlegno_fence_gate": "Orlegno Fence Gate",
+  "block.pacocraft.orlegno_door": "Orlegno Door",
+  "block.pacocraft.orlegno_trapdoor": "Orlegno Trapdoor",
 
   "itemgroup.pacocraft.items": "Paco Craft Items",
   "itemgroup.pacocraft.tools": "Paco Craft Tools & Armor",
-  "itemgroup.pacocraft.blocks": "Paco Craft Blocks"
+  "itemgroup.pacocraft.blocks": "Paco Craft Blocks",
+
+  "entity.pacocraft.giangolem": "Giangolem"
 }

@@ -1,6 +1,14 @@
-// 1.20.4	2024-04-30T14:11:03.0573351	Paco Craft/Tags for minecraft:item
-b21e403ff38c9bf65404c48404f11a7856c02587 data\minecraft\tags\items\logs_that_burn.json
+// 1.20.4	2024-05-01T14:05:13.5412273	Paco Craft/Tags for minecraft:item
 60f6c1218f7f677a4d8dfd45bd80aa801a005e9f data\minecraft\tags\items\trimmable_armor.json
+fda0a2e7f12789e5635ee5b2c2fbf46a7e15cc04 data\minecraft\tags\items\fence_gates.json
 2c11df6c398442c3070e5d019ea68257bf877fee data\minecraft\tags\items\music_discs.json
 ff59cd49ad9f13482f6c2230108514ea7b27b099 data\minecraft\tags\items\planks.json
+80084f175b0f091ccef78d823be5cf19eb397677 data\minecraft\tags\items\wooden_fences.json
 f2baa6a5ce819471326610e4deea7d80c830d3bd data\pacocraft\tags\items\orlegno_logs.json
+063856fb540544b545898765fa131590ce888c90 data\minecraft\tags\items\wooden_trapdoors.json
+81e7d8898bc88245df88549d99f0bd0708d753ea data\minecraft\tags\items\wooden_slabs.json
+fab9a908faecce3aa6acbaadd5afc59eac8d731c data\minecraft\tags\items\wooden_buttons.json
+b21e403ff38c9bf65404c48404f11a7856c02587 data\minecraft\tags\items\logs_that_burn.json
+3f11e2e22fdc646269b5390b742d0b469c6b49e1 data\minecraft\tags\items\wooden_stairs.json
+b1d2914b6323223a4353034c0ed43601f3d52515 data\minecraft\tags\items\wooden_pressure_plates.json
+83a6c5bd9f07b5e759f3a52d6912c63658b12214 data\minecraft\tags\items\wooden_doors.json

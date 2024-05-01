@@ -21,6 +21,10 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        //---- <POOLS> ----//
+        BlockStateModelGenerator.BlockTexturePool orlegnoPool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ORLEGNO_PLANKS);
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ETNITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ETNITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_ETNITE_ORE);
@@ -32,8 +36,16 @@ public class ModModelProvider extends FabricModelProvider {
                 .log(ModBlocks.ORLEGNO_LOG).wood(ModBlocks.ORLEGNO_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_ORLEGNO_LOG)
                 .log(ModBlocks.STRIPPED_ORLEGNO_LOG).wood(ModBlocks.STRIPPED_ORLEGNO_WOOD);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ORLEGNO_PLANKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ORLEGNO_LEAVES);
+        blockStateModelGenerator.registerDoor(ModBlocks.ORLEGNO_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.ORLEGNO_TRAPDOOR);
+
+        orlegnoPool.stairs(ModBlocks.ORLEGNO_STAIRS);
+        orlegnoPool.slab(ModBlocks.ORLEGNO_SLAB);
+        orlegnoPool.button(ModBlocks.ORLEGNO_BUTTON);
+        orlegnoPool.pressurePlate(ModBlocks.ORLEGNO_PRESSURE_PLATE);
+        orlegnoPool.fence(ModBlocks.ORLEGNO_FENCE);
+        orlegnoPool.fenceGate(ModBlocks.ORLEGNO_FENCE_GATE);
     }
 
     @Override
