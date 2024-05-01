@@ -47,7 +47,10 @@ public class GiangolemAttackGoal extends MeleeAttackGoal {
     }
 
     private boolean isEnemyWithinAttackDistance(LivingEntity pEnemy) {
-        return this.entity.distanceTo(pEnemy) <= 2f; // TODO
+        /**
+         * Reach distance
+         */
+        return this.entity.distanceTo(pEnemy) <= 3f;
     }
 
     protected void resetAttackCooldown() {

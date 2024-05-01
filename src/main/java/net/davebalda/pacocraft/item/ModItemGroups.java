@@ -71,6 +71,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ORLEGNO_FENCE_GATE);
                         entries.add(ModBlocks.ORLEGNO_DOOR);
                         entries.add(ModBlocks.ORLEGNO_TRAPDOOR);
+                        entries.add(ModBlocks.ORLEGNO_SIGN);
+                        entries.add(ModBlocks.ORLEGNO_HANGING_SIGN);
 
                     }).build());
 

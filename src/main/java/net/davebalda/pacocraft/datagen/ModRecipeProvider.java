@@ -89,6 +89,19 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.ORLEGNO_PLANKS), conditionsFromItem(ModBlocks.ORLEGNO_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ORLEGNO_TRAPDOOR)));
 
+        createSignRecipe(ModBlocks.ORLEGNO_SIGN, Ingredient.ofItems(ModBlocks.ORLEGNO_PLANKS))
+                .criterion(hasItem(ModBlocks.ORLEGNO_PLANKS), conditionsFromItem(ModBlocks.ORLEGNO_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ORLEGNO_SIGN)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModItems.ORLEGNO_HANGING_SIGN, 6)
+                .pattern("C C")
+                .pattern("LLL")
+                .pattern("LLL")
+                .input('C', Items.CHAIN)
+                .input('L', ModBlocks.STRIPPED_ORLEGNO_LOG)
+                .criterion(hasItem(ModBlocks.STRIPPED_ORLEGNO_LOG), conditionsFromItem(ModBlocks.STRIPPED_ORLEGNO_LOG))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ORLEGNO_HANGING_SIGN)));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ETNITE_SWORD, 1)
                 .pattern("E")
                 .pattern("E")

@@ -39,6 +39,10 @@
   "block.pacocraft.orlegno_fence_gate": "Orlegno Fence Gate",
   "block.pacocraft.orlegno_door": "Orlegno Door",
   "block.pacocraft.orlegno_trapdoor": "Orlegno Trapdoor",
+  "block.pacocraft.orlegno_sign": "Orlegno Sign",
+  "block.pacocraft.orlegno_wall_sign": "Orlegno Wall Sign",
+  "block.pacocraft.orlegno_hanging_sign": "Orlegno Hanging Sign",
+  "block.pacocraft.orlegno_wall_hanging_sign": "Orlegno Wall Hanging Sign",
 
   "itemgroup.pacocraft.items": "Paco Craft Items",
   "itemgroup.pacocraft.tools": "Paco Craft Tools & Armor",

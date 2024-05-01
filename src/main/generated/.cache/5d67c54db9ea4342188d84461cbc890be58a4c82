@@ -1,7 +1,8 @@
-// 1.20.4	2024-05-01T14:05:13.5372289	Paco Craft/Recipes
+// 1.20.4	2024-05-01T16:55:54.6818986	Paco Craft/Recipes
 e1a6af492f39398aaf44b78f11e5de83f60596db data\pacocraft\advancements\recipes\combat\etnite_chestplate.json
 e99ae35c6132090c678d871f9a45ff35f09d43df data\pacocraft\advancements\recipes\building_blocks\orlegno_stairs.json
 36b36edc2353ead7cec2df13b14dbe7f8bea027f data\pacocraft\recipes\etnite_pickaxe.json
+4f9af4e2cbe4d4b2ee5cd14a10cbfecc541edbae data\pacocraft\advancements\recipes\building_blocks\orlegno_hanging_sign.json
 52a6a46b42894a2f5f18bf78f4e3d7db0d78bee8 data\pacocraft\advancements\recipes\misc\etnite_gem.json
 4230ae40edc9f96ede5b72b89bd2b17d36a6e142 data\pacocraft\advancements\recipes\redstone\orlegno_fence_gate.json
 e3bd930d4cbd05b44d8c2a7a33bcab9fe3e37288 data\pacocraft\advancements\recipes\redstone\orlegno_trapdoor.json
@@ -12,6 +13,8 @@ f6a37b31f1c44bb11e269c741fd44235add2c8c0 data\pacocraft\advancements\recipes\com
 10a8da20598fcac97f965bc2701af0ed9250ae0b data\pacocraft\advancements\recipes\combat\etnite_sword.json
 3d0fda524ed3d2266fadd6273158674bd71dae97 data\pacocraft\recipes\etnite_chestplate.json
 c9588b7bd0d189547294fc85741fbd6cfb402d53 data\pacocraft\advancements\recipes\food\protein_shake.json
+058f3b5451441034bc176ec2f011fa5a8b2911f1 data\pacocraft\advancements\recipes\decorations\orlegno_sign.json
+4135aa072967e2dba7cd4c32d762ab8d19611bc9 data\pacocraft\recipes\orlegno_hanging_sign.json
 58cc226389fa49e8ca02eb94b0339bd489df7c3d data\pacocraft\recipes\orlegno_door.json
 be7b873e65d1737e648a15c103168fe89d227247 data\pacocraft\recipes\etnite_boots.json
 43d60a14f29f7e83e4394aaf2580b6793b5113a4 data\pacocraft\recipes\orlegno_fence_gate.json
@@ -23,6 +26,7 @@ d0fce93aaa700a74d64f32d6449382cd9ea2941e data\pacocraft\recipes\etnite_leggings.
 a5f6e9f67391a87c003c8653937db553a7bee93b data\pacocraft\recipes\orlegno_trapdoor.json
 15f3246cf3c504ef4e83b4bf3043ea0ed5873aec data\pacocraft\recipes\etnite_gem.json
 78c365ca6b2e242171419cac2e1a6cc7a0c6b151 data\pacocraft\recipes\orlegno_fence.json
+80beb538cdb77b39c585c2a2239c3b198d7285ce data\pacocraft\recipes\orlegno_sign.json
 a6c7360b2c08209ce8a7e78d73f7413ed022ecae data\pacocraft\recipes\protein_shake.json
 7127d5a10bf2d57e41e6a26870b78c6316ac6c02 data\pacocraft\advancements\recipes\combat\etnite_boots.json
 bb02834cf6bc15f1b12ff110e46943e6a716232a data\pacocraft\advancements\recipes\tools\etnite_pickaxe.json
