@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "pacocraft:orlegno_wall_hanging_sign",
+    "pacocraft:orlegno_wall_sign",
+    "pacocraft:orlegno_sign",
+    "pacocraft:orlegno_hanging_sign"
+  ]
+}

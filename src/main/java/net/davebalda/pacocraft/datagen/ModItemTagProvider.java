@@ -66,5 +66,12 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.WOODEN_TRAPDOORS)
                 .add(ModBlocks.ORLEGNO_TRAPDOOR.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SIGNS)
+                .add(ModItems.ORLEGNO_SIGN)
+                .add(ModItems.ORLEGNO_HANGING_SIGN);
+
+        getOrCreateTagBuilder(ItemTags.HANGING_SIGNS)
+                .add(ModItems.ORLEGNO_HANGING_SIGN);
     }
 }

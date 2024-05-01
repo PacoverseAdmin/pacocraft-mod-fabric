@@ -21,16 +21,18 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        //---- <POOLS> ----//
-        BlockStateModelGenerator.BlockTexturePool orlegnoPool =
-                blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ORLEGNO_PLANKS);
-
+        //---- <ETNITE> ----//
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ETNITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ETNITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_ETNITE_ORE);
 
+        //---- <CHECH.ART> ----//
         blockStateModelGenerator.registerCrop(ModBlocks.CHECHEN_ARTICHOKE_CROP,
                 ChechenArtichokeCropBlock.AGE, 0, 1, 2, 3);
+
+        //---- <ORLEGNO> ----//
+        BlockStateModelGenerator.BlockTexturePool orlegnoPool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ORLEGNO_PLANKS);
 
         blockStateModelGenerator.registerLog(ModBlocks.ORLEGNO_LOG)
                 .log(ModBlocks.ORLEGNO_LOG).wood(ModBlocks.ORLEGNO_WOOD);

@@ -83,5 +83,25 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS)
                 .add(ModBlocks.ORLEGNO_TRAPDOOR);
+
+        getOrCreateTagBuilder(BlockTags.STANDING_SIGNS)
+                .add(ModBlocks.ORLEGNO_SIGN);
+
+        getOrCreateTagBuilder(BlockTags.WALL_SIGNS)
+                .add(ModBlocks.ORLEGNO_WALL_SIGN)
+                .add(ModBlocks.ORLEGNO_WALL_HANGING_SIGN);
+
+        getOrCreateTagBuilder(BlockTags.ALL_HANGING_SIGNS)
+                .add(ModBlocks.ORLEGNO_HANGING_SIGN)
+                .add(ModBlocks.ORLEGNO_WALL_HANGING_SIGN);
+
+        getOrCreateTagBuilder(BlockTags.WALL_HANGING_SIGNS)
+                .add(ModBlocks.ORLEGNO_WALL_HANGING_SIGN);
+
+        getOrCreateTagBuilder(BlockTags.SIGNS)
+                .add(ModBlocks.ORLEGNO_WALL_HANGING_SIGN)
+                .add(ModBlocks.ORLEGNO_WALL_SIGN)
+                .add(ModBlocks.ORLEGNO_SIGN)
+                .add(ModBlocks.ORLEGNO_HANGING_SIGN);
     }
 }

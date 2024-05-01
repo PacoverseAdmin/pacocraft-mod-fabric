@@ -38,6 +38,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.ORLEGNO_TRAPDOOR);
         addDrop(ModBlocks.ORLEGNO_BUTTON);
         addDrop(ModBlocks.ORLEGNO_PRESSURE_PLATE);
+        addDrop(ModBlocks.ORLEGNO_SIGN);
+        addDrop(ModBlocks.ORLEGNO_HANGING_SIGN);
 
         addDrop(ModBlocks.ORLEGNO_DOOR, doorDrops(ModBlocks.ORLEGNO_DOOR));
         addDrop(ModBlocks.ORLEGNO_SLAB, slabDrops(ModBlocks.ORLEGNO_SLAB));

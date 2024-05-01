@@ -20,6 +20,10 @@ public class ModItems {
     public static final Item CHECHEN_ARTICHOKE = registerItem("chechen_artichoke", new AliasedBlockItem(
             ModBlocks.CHECHEN_ARTICHOKE_CROP, new FabricItemSettings()
             .food(ModFoodComponents.CHECHEN_ARTICHOKE)));
+    public static final Item ORLEGNO_SIGN = registerItem("orlegno_sign",
+            new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.ORLEGNO_SIGN, ModBlocks.ORLEGNO_WALL_SIGN));
+    public static final Item ORLEGNO_HANGING_SIGN = registerItem("orlegno_hanging_sign",
+            new HangingSignItem(ModBlocks.ORLEGNO_HANGING_SIGN, ModBlocks.ORLEGNO_WALL_HANGING_SIGN, new FabricItemSettings().maxCount(16)));
 
     //---- <MOD MOBS LIST> ----//
     public static final Item GIANGOLEM_SPAWN_EGG = registerItem("giangolem_spawn_egg",
