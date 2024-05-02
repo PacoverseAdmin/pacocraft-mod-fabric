@@ -6,6 +6,7 @@ import net.davebalda.pacocraft.entity.custom.GiangolemEntity;
 import net.davebalda.pacocraft.item.ModItemGroups;
 import net.davebalda.pacocraft.item.ModItems;
 import net.davebalda.pacocraft.sound.ModSounds;
+import net.davebalda.pacocraft.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
@@ -25,6 +26,7 @@ public class PacoCraft implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModSounds.registerSounds();
 		ModEntities.registerModEntities();
+		ModWorldGeneration.generateModWorldGen();
 
 		//---- <REGISTRIES> ----//
 		StrippableBlockRegistry.register(ModBlocks.ORLEGNO_LOG, ModBlocks.STRIPPED_ORLEGNO_LOG);

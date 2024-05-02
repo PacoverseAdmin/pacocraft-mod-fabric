@@ -8,10 +8,8 @@ import net.davebalda.pacocraft.entity.animation.ModAnimations;
 import net.davebalda.pacocraft.entity.custom.GiangolemEntity;
 import net.minecraft.client.model.*;
 import net.minecraft.client.render.VertexConsumer;
-import net.minecraft.client.render.entity.model.EntityModel;
 import net.minecraft.client.render.entity.model.SinglePartEntityModel;
 import net.minecraft.client.util.math.MatrixStack;
-import net.minecraft.entity.Entity;
 import net.minecraft.util.math.MathHelper;
 
 public class GiangolemModel<T extends GiangolemEntity> extends SinglePartEntityModel<T> {
@@ -131,7 +129,7 @@ public class GiangolemModel<T extends GiangolemEntity> extends SinglePartEntityM
 		this.setHeadAngles(netHeadYaw, headPitch);
 
 		this.animateMovement(ModAnimations.GIANGOLEM_WALK, limbSwing, limbSwingAmount, 2f, 2.5f);
-		this.updateAnimation(entity.attackAnimationState, ModAnimations.GIANGOLEM_ATTACK, ageInTicks, 1f);
+		this.updateAnimation(entity.attackAnimationState, ModAnimations.GIANGOLEM_ATTACK, ageInTicks, 1f);;
 	}
 
 	private void setHeadAngles(float headYaw, float headPitch){

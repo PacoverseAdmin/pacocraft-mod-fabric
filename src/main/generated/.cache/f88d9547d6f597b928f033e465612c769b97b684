@@ -1,4 +1,4 @@
-// 1.20.4	2024-05-01T16:55:54.6858973	Paco Craft/Model Definitions
+// 1.20.4	2024-05-02T13:34:39.775309	Paco Craft/Model Definitions
 3308807dcff8baa8f87ee8a614c5a121662b9175 assets\pacocraft\models\item\orlegno_fence_gate.json
 eedadd5d66bc87c6b809ce39aa06945ded8d2592 assets\pacocraft\models\block\orlegno_stairs_outer.json
 da4c1af89c040c109dc75aae5146157c0388d595 assets\pacocraft\blockstates\orlegno_fence_gate.json
@@ -12,8 +12,8 @@ b152d8411e2de5dc0eaad7963477c04a40ca1d3f assets\pacocraft\models\block\stripped_
 f7b6ca4b3f17399886c17c567292839a7cab6fed assets\pacocraft\models\item\etnite_boots_netherite_trim.json
 7695d13d8252f11f9bfe50c22f81fedb7d4db80b assets\pacocraft\models\item\etnite_leggings_iron_trim.json
 06cc5c9c7b9d0ce0f94ea3fb561a29f05a2666a2 assets\pacocraft\models\block\orlegno_door_bottom_left.json
-5e68b77c8a64096007ff0a595038ba37717bc3c8 assets\pacocraft\models\block\orlegno_stairs_inner.json
 5c4f00f5cf03b513dd0776286c114181e11ba1f4 assets\pacocraft\models\block\orlegno_button.json
+5e68b77c8a64096007ff0a595038ba37717bc3c8 assets\pacocraft\models\block\orlegno_stairs_inner.json
 3ddac536caec83e600a059fa5c9e6b159c74ad6b assets\pacocraft\blockstates\deepslate_etnite_ore.json
 bc90e78295856833ae2d74b02c23ef5476126e5c assets\pacocraft\models\item\etnite_helmet_emerald_trim.json
 d94467403b459465fa328bb6e24946f801e323e0 assets\pacocraft\blockstates\stripped_orlegno_wood.json
@@ -121,8 +121,8 @@ fe3f82f67151799fc14c936478863621946f5b9d assets\pacocraft\models\item\etnite_hel
 0bdb63073f8eca4da34ae5e76eb11fb5146daf8d assets\pacocraft\models\block\orlegno_button_inventory.json
 6d1f38a48679d7fd172e7b6b1a0db4327bb826a8 assets\pacocraft\models\item\etnite_shovel.json
 35f439d3b4deb59f1ce0ef432be42b6577b4374f assets\pacocraft\models\item\etnite_helmet_diamond_trim.json
-90e48460fd8cc9d7393b464a3acc6df4e5f61039 assets\pacocraft\models\item\etnite_pickaxe.json
 107cc2110f3e08b17202a92fc13027605c40fce3 assets\pacocraft\models\block\orlegno_fence_gate_wall.json
+90e48460fd8cc9d7393b464a3acc6df4e5f61039 assets\pacocraft\models\item\etnite_pickaxe.json
 3d7834adde37396a52dc8f3b91400dd1de7848fc assets\pacocraft\models\item\etnite_helmet_redstone_trim.json
 d90e442c44e160f89153f25a09d347cbff05b54f assets\pacocraft\models\block\deepslate_etnite_ore.json
 2f8e05f45c267fb6fa4936e46e4e79f82c3d2d06 assets\pacocraft\models\item\etnite_boots_amethyst_trim.json
