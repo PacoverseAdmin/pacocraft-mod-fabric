@@ -3,6 +3,10 @@
   "values": [
     "pacocraft:etnite_block",
     "pacocraft:etnite_ore",
-    "pacocraft:deepslate_etnite_ore"
+    "pacocraft:deepslate_etnite_ore",
+    "pacocraft:palermium_block",
+    "pacocraft:palermium_ore",
+    "pacocraft:deepslate_palermium_ore",
+    "pacocraft:nether_palermium_ore"
   ]
 }

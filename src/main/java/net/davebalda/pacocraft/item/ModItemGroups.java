@@ -22,6 +22,8 @@ public class ModItemGroups {
 
                         //Entries for "Paco Craft Items" tab
                         entries.add(ModItems.ETNITE_GEM);
+                        entries.add(ModItems.RAW_PALERMIUM);
+                        entries.add(ModItems.PURE_PALERMIUM);
                         entries.add(ModItems.PROTEIN_SHAKE);
                         entries.add(ModItems.CHECHEN_ARTICHOKE);
                         entries.add(ModItems.MUSIC_DISC_FACCETTA_NERA);
@@ -57,6 +59,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ETNITE_BLOCK);
                         entries.add(ModBlocks.ETNITE_ORE);
                         entries.add(ModBlocks.DEEPSLATE_ETNITE_ORE);
+                        entries.add(ModBlocks.PALERMIUM_BLOCK);
+                        entries.add(ModBlocks.PALERMIUM_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_PALERMIUM_ORE);
+                        entries.add(ModBlocks.NETHER_PALERMIUM_ORE);
                         entries.add(ModBlocks.ORLEGNO_LOG);
                         entries.add(ModBlocks.ORLEGNO_WOOD);
                         entries.add(ModBlocks.STRIPPED_ORLEGNO_LOG);

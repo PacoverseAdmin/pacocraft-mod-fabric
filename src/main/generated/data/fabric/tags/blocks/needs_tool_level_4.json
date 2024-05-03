@@ -1,4 +1,9 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    "pacocraft:palermium_ore",
+    "pacocraft:deepslate_palermium_ore",
+    "pacocraft:nether_palermium_ore",
+    "pacocraft:palermium_block"
+  ]
 }

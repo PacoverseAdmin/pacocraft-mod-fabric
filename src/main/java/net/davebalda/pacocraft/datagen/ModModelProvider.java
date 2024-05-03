@@ -25,6 +25,10 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ETNITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ETNITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_ETNITE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PALERMIUM_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PALERMIUM_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_PALERMIUM_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_PALERMIUM_ORE);
 
         //---- <CHECH.ART> ----//
         blockStateModelGenerator.registerCrop(ModBlocks.CHECHEN_ARTICHOKE_CROP,
@@ -53,6 +57,8 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.ETNITE_GEM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_PALERMIUM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PURE_PALERMIUM, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.PROTEIN_SHAKE, Models.GENERATED);
 

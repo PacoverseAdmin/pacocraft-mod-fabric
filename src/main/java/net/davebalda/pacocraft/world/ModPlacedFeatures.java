@@ -17,6 +17,8 @@ import java.util.List;
 public class ModPlacedFeatures {
 
     public static final RegistryKey<PlacedFeature> ETNITE_ORE_PLACED_KEY = registerKey("etnite_ore_placed");
+    public static final RegistryKey<PlacedFeature> PALERMIUM_ORE_PLACED_KEY = registerKey("palermium_ore_placed");
+    public static final RegistryKey<PlacedFeature> NETHER_PALERMIUM_ORE_PLACED_KEY = registerKey("nether_palermium_ore_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context){
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
@@ -24,6 +26,14 @@ public class ModPlacedFeatures {
         register(context, ETNITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.ETNITE_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(2, //Veins per chunk
                         HeightRangePlacementModifier.trapezoid(YOffset.fixed(-64), YOffset.fixed(32))));
+
+        register(context, PALERMIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PALERMIUM_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(2, //Veins per chunk
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(-64), YOffset.fixed(16))));
+
+        register(context, NETHER_PALERMIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.NETHER_PALERMIUM_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(2, //Veins per chunk
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(128))));
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {

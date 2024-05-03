@@ -1,12 +1,12 @@
-// 1.20.4	2024-05-03T15:18:09.7424996	Paco Craft/Tags for minecraft:block
+// 1.20.4	2024-05-03T18:06:09.8267009	Paco Craft/Tags for minecraft:block
 bdd530afe27d608c78bfb2e0840f450e1724347f data\minecraft\tags\blocks\all_hanging_signs.json
 2607289bc53e741116481f390accdf49a81baf8e data\minecraft\tags\blocks\wall_hanging_signs.json
 fab9a908faecce3aa6acbaadd5afc59eac8d731c data\minecraft\tags\blocks\wooden_buttons.json
 b21e403ff38c9bf65404c48404f11a7856c02587 data\pacocraft\tags\blocks\orlegno_logs.json
 b1d2914b6323223a4353034c0ed43601f3d52515 data\minecraft\tags\blocks\wooden_pressure_plates.json
-b21e403ff38c9bf65404c48404f11a7856c02587 data\minecraft\tags\blocks\logs_that_burn.json
-f4d81a6a3c67f260ec5d0b1423da7f1263f37381 data\minecraft\tags\blocks\mineable\pickaxe.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\needs_stone_tool.json
+72be8cb320157e8c7871fda2012cc28e326b7c5a data\minecraft\tags\blocks\mineable\pickaxe.json
+b21e403ff38c9bf65404c48404f11a7856c02587 data\minecraft\tags\blocks\logs_that_burn.json
 fda0a2e7f12789e5635ee5b2c2fbf46a7e15cc04 data\minecraft\tags\blocks\fence_gates.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\mineable\hoe.json
 80084f175b0f091ccef78d823be5cf19eb397677 data\minecraft\tags\blocks\wooden_fences.json
@@ -18,8 +18,8 @@ fda0a2e7f12789e5635ee5b2c2fbf46a7e15cc04 data\minecraft\tags\blocks\fence_gates.
 83a6c5bd9f07b5e759f3a52d6912c63658b12214 data\minecraft\tags\blocks\wooden_doors.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\needs_diamond_tool.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\sword_efficient.json
-8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fabric\tags\blocks\needs_tool_level_4.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\mineable\axe.json
+ddb9b5a094641290fa2f13a02f9aea63364c31ba data\fabric\tags\blocks\needs_tool_level_4.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\mineable\shovel.json
 c563fb956a0c5b3aeb78381e06eb75959ee4a75a data\minecraft\tags\blocks\signs.json
 f4d81a6a3c67f260ec5d0b1423da7f1263f37381 data\minecraft\tags\blocks\needs_iron_tool.json

@@ -1,3 +1,7 @@
-// 1.20.4	2024-05-03T15:18:09.7394991	Paco Craft/World Gen
+// 1.20.4	2024-05-03T18:06:09.8237027	Paco Craft/World Gen
 c38420206592ba2773a313143eb908a9888c7efe data\pacocraft\worldgen\configured_feature\etnite_ore.json
+38180f972aade435e38d3b7f613a5bce57312bf8 data\pacocraft\worldgen\placed_feature\nether_palermium_ore_placed.json
+f170825ecacbf7bc7c26dafca4797d0e28b273ae data\pacocraft\worldgen\configured_feature\palermium_ore.json
+7b384d26d57b64a14f059ea15b3bb4e6157aac87 data\pacocraft\worldgen\placed_feature\palermium_ore_placed.json
 b2bfff2f5989e1b70148a4ffaf2b106bdb06f88e data\pacocraft\worldgen\placed_feature\etnite_ore_placed.json
+48ebc4324678088d0b91ef00fa5ab7fa5145f189 data\pacocraft\worldgen\configured_feature\nether_palermium_ore.json

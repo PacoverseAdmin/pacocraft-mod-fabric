@@ -15,6 +15,8 @@ public class ModItems {
 
     //---- <MOD ITEM LIST> ----//
     public static final Item ETNITE_GEM = registerItem("etnite_gem", new Item(new FabricItemSettings()));
+    public static final Item RAW_PALERMIUM = registerItem("raw_palermium", new Item(new FabricItemSettings()));
+    public static final Item PURE_PALERMIUM = registerItem("pure_palermium", new Item(new FabricItemSettings()));
     public static final Item PROTEIN_SHAKE = registerItem("protein_shake", new Item(new FabricItemSettings()
             .food(ModFoodComponents.PROTEIN_SHAKE)));
     public static final Item CHECHEN_ARTICHOKE = registerItem("chechen_artichoke", new AliasedBlockItem(

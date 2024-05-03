@@ -23,14 +23,24 @@ public class ModBlocks {
     //---- <MOD BLOCK LIST> ----//
     public static final Block ETNITE_BLOCK = registerBlock("etnite_block",
             new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK).mapColor(MapColor.RED)));
-
     public static final Block ETNITE_ORE = registerBlock("etnite_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 5), FabricBlockSettings.copyOf(Blocks.EMERALD_ORE)
                     .mapColor(MapColor.RED)));
-
     public static final Block DEEPSLATE_ETNITE_ORE = registerBlock("deepslate_etnite_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 5), FabricBlockSettings.copyOf(Blocks.DEEPSLATE_EMERALD_ORE)
                     .mapColor(MapColor.RED)));
+
+    public static final Block PALERMIUM_BLOCK = registerBlock("palermium_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).mapColor(MapColor.YELLOW)));
+    public static final Block PALERMIUM_ORE = registerBlock("palermium_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(10,15), FabricBlockSettings.copyOf(Blocks.IRON_ORE)
+                    .mapColor(MapColor.YELLOW)));
+    public static final Block DEEPSLATE_PALERMIUM_ORE = registerBlock("deepslate_palermium_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(10,15), FabricBlockSettings.copyOf(Blocks.DEEPSLATE_IRON_ORE)
+                    .mapColor(MapColor.YELLOW)));
+    public static final Block NETHER_PALERMIUM_ORE = registerBlock("nether_palermium_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(10,15), FabricBlockSettings.copyOf(Blocks.IRON_ORE)
+                    .mapColor(MapColor.YELLOW)));
 
     public static final Block CHECHEN_ARTICHOKE_CROP = Registry.register(Registries.BLOCK,
             new Identifier(PacoCraft.MOD_ID, "chechen_artichoke_crop"),

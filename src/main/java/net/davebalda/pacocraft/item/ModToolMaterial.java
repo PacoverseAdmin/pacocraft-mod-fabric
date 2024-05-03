@@ -6,8 +6,10 @@ import net.minecraft.recipe.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    ETNITE(3, 500, 6.0f, 2.0f, 14,
-            () -> Ingredient.ofItems(ModItems.ETNITE_GEM));
+    ETNITE(3, 500, 7.0f, 2.0f, 14,
+            () -> Ingredient.ofItems(ModItems.ETNITE_GEM)),
+    PALERMIUM(4, 10000, 10.0f, 5.0f, 30,
+            () -> Ingredient.ofItems(ModItems.PURE_PALERMIUM));
 
     private final int miningLevel;
     private final int itemDurability;

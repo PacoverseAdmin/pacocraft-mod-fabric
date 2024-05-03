@@ -23,7 +23,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.ETNITE_BLOCK)
                 .add(ModBlocks.ETNITE_ORE)
-                .add(ModBlocks.DEEPSLATE_ETNITE_ORE);
+                .add(ModBlocks.DEEPSLATE_ETNITE_ORE)
+                .add(ModBlocks.PALERMIUM_BLOCK)
+                .add(ModBlocks.PALERMIUM_ORE)
+                .add(ModBlocks.DEEPSLATE_PALERMIUM_ORE)
+                .add(ModBlocks.NETHER_PALERMIUM_ORE);
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE);
 
@@ -44,7 +48,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL);
 
-        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")));
+        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")))
+                .add(ModBlocks.PALERMIUM_ORE)
+                .add(ModBlocks.DEEPSLATE_PALERMIUM_ORE)
+                .add(ModBlocks.NETHER_PALERMIUM_ORE)
+                .add(ModBlocks.PALERMIUM_BLOCK);
 
 
         //---- <WOOD CREATION> ----//

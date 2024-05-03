@@ -18,6 +18,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.ETNITE_BLOCK);
         addDrop(ModBlocks.ETNITE_ORE, oreDrops(ModBlocks.ETNITE_ORE, ModItems.ETNITE_GEM));
         addDrop(ModBlocks.DEEPSLATE_ETNITE_ORE, oreDrops(ModBlocks.DEEPSLATE_ETNITE_ORE, ModItems.ETNITE_GEM));
+        addDrop(ModBlocks.PALERMIUM_ORE, oreDrops(ModBlocks.PALERMIUM_ORE, ModItems.RAW_PALERMIUM));
+        addDrop(ModBlocks.DEEPSLATE_PALERMIUM_ORE, oreDrops(ModBlocks.DEEPSLATE_PALERMIUM_ORE, ModItems.RAW_PALERMIUM));
+        addDrop(ModBlocks.NETHER_PALERMIUM_ORE, oreDrops(ModBlocks.NETHER_PALERMIUM_ORE, ModItems.RAW_PALERMIUM));
 
         BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition.builder(ModBlocks.CHECHEN_ARTICHOKE_CROP)
                 .properties(StatePredicate.Builder.create().exactMatch(ChechenArtichokeCropBlock.AGE, 3));
