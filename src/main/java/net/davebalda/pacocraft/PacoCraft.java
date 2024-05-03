@@ -4,6 +4,7 @@ import net.davebalda.pacocraft.block.ModBlocks;
 import net.davebalda.pacocraft.entity.ModEntities;
 import net.davebalda.pacocraft.item.ModItemGroups;
 import net.davebalda.pacocraft.item.ModItems;
+import net.davebalda.pacocraft.painting.ModPaintings;
 import net.davebalda.pacocraft.sound.ModSounds;
 import net.davebalda.pacocraft.util.ModRegistries;
 import net.davebalda.pacocraft.world.gen.ModWorldGeneration;
@@ -24,6 +25,7 @@ public class PacoCraft implements ModInitializer {
 		ModSounds.registerSounds();
 		ModEntities.registerModEntities();
 		ModWorldGeneration.generateModWorldGen();
+		ModPaintings.registerPaintings();
 
 		//---- <REGISTRIES> ----//
 		ModRegistries.registerModStuff();
