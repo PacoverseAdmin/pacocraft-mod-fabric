@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "pacocraft:block/orlegno_sapling"
+  }
+}

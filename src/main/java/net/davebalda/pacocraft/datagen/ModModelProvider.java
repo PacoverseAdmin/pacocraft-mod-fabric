@@ -46,6 +46,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(ModBlocks.ORLEGNO_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.ORLEGNO_TRAPDOOR);
 
+        blockStateModelGenerator.registerTintableCross(ModBlocks.ORLEGNO_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
         orlegnoPool.stairs(ModBlocks.ORLEGNO_STAIRS);
         orlegnoPool.slab(ModBlocks.ORLEGNO_SLAB);
         orlegnoPool.button(ModBlocks.ORLEGNO_BUTTON);

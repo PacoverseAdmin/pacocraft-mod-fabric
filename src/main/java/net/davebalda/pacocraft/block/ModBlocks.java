@@ -6,6 +6,8 @@ import com.terraformersmc.terraform.sign.block.TerraformWallHangingSignBlock;
 import com.terraformersmc.terraform.sign.block.TerraformWallSignBlock;
 import net.davebalda.pacocraft.PacoCraft;
 import net.davebalda.pacocraft.block.custom.ChechenArtichokeCropBlock;
+import net.davebalda.pacocraft.world.ModConfiguredFeatures;
+import net.davebalda.pacocraft.world.tree.ModSaplingGenerators;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -74,6 +76,9 @@ public class ModBlocks {
             new DoorBlock(BlockSetType.OAK, FabricBlockSettings.copyOf(Blocks.OAK_DOOR).mapColor(MapColor.PURPLE)));
     public static final Block ORLEGNO_TRAPDOOR = registerBlock("orlegno_trapdoor",
             new TrapdoorBlock(BlockSetType.OAK, FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).mapColor(MapColor.PURPLE)));
+
+    public static final Block ORLEGNO_SAPLING = registerBlock("orlegno_sapling",
+            new SaplingBlock(ModSaplingGenerators.ORLEGNO, FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
 
     public static final Identifier ORLEGNO_SIGN_TEXTURE = new Identifier(PacoCraft.MOD_ID, "entity/signs/orlegno");
     public static final Identifier ORLEGNO_HANGING_SIGN_TEXTURE = new Identifier(PacoCraft.MOD_ID, "entity/signs/hanging/orlegno");

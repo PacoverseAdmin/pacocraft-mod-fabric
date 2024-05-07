@@ -9,10 +9,12 @@ import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.FeatureConfig;
-import net.minecraft.world.gen.feature.OreFeatureConfig;
+import net.minecraft.util.math.intprovider.ConstantIntProvider;
+import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
+import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
+import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
 import java.util.List;
 
@@ -21,6 +23,8 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> ETNITE_ORE_KEY = registerKey("etnite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> PALERMIUM_ORE_KEY = registerKey("palermium_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> NETHER_PALERMIUM_ORE_KEY = registerKey("nether_palermium_ore");
+
+    public static final RegistryKey<ConfiguredFeature<?, ?>> ORLEGNO_KEY = registerKey("orlegno");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context){
         RuleTest stoneReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -43,6 +47,13 @@ public class ModConfiguredFeatures {
         register(context, PALERMIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldPalermiumOres, 3));
         register(context, NETHER_PALERMIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherPalermiumOres, 4));
 
+        register(context, ORLEGNO_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(ModBlocks.ORLEGNO_LOG),
+                new StraightTrunkPlacer(3, 2, 3),
+                BlockStateProvider.of(ModBlocks.ORLEGNO_LEAVES),
+                new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 2),
+                new TwoLayersFeatureSize(0, 0, 1)).ignoreVines()
+                .build());
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

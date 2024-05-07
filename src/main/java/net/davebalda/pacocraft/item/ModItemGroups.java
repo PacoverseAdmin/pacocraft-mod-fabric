@@ -69,6 +69,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.STRIPPED_ORLEGNO_WOOD);
                         entries.add(ModBlocks.ORLEGNO_PLANKS);
                         entries.add(ModBlocks.ORLEGNO_LEAVES);
+                        entries.add(ModBlocks.ORLEGNO_SAPLING);
                         entries.add(ModBlocks.ORLEGNO_STAIRS);
                         entries.add(ModBlocks.ORLEGNO_SLAB);
                         entries.add(ModBlocks.ORLEGNO_PRESSURE_PLATE);

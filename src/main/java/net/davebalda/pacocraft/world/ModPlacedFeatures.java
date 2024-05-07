@@ -1,6 +1,7 @@
 package net.davebalda.pacocraft.world;
 
 import net.davebalda.pacocraft.PacoCraft;
+import net.davebalda.pacocraft.block.ModBlocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -9,6 +10,8 @@ import net.minecraft.util.Identifier;
 import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.PlacedFeature;
+import net.minecraft.world.gen.feature.PlacedFeatures;
+import net.minecraft.world.gen.feature.VegetationPlacedFeatures;
 import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
 import net.minecraft.world.gen.placementmodifier.PlacementModifier;
 
@@ -19,6 +22,8 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> ETNITE_ORE_PLACED_KEY = registerKey("etnite_ore_placed");
     public static final RegistryKey<PlacedFeature> PALERMIUM_ORE_PLACED_KEY = registerKey("palermium_ore_placed");
     public static final RegistryKey<PlacedFeature> NETHER_PALERMIUM_ORE_PLACED_KEY = registerKey("nether_palermium_ore_placed");
+
+    public static final RegistryKey<PlacedFeature> ORLEGNO_PLACED_KEY = registerKey("orlegno_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context){
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
@@ -34,6 +39,10 @@ public class ModPlacedFeatures {
         register(context, NETHER_PALERMIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.NETHER_PALERMIUM_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(2, //Veins per chunk
                         HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(128))));
+
+        register(context, ORLEGNO_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.ORLEGNO_KEY),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1, 0.1f, 0), // 1/extra_chance must be int!
+                        ModBlocks.ORLEGNO_SAPLING));
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {

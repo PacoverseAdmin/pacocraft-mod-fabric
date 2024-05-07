@@ -43,10 +43,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.ORLEGNO_PRESSURE_PLATE);
         addDrop(ModBlocks.ORLEGNO_SIGN);
         addDrop(ModBlocks.ORLEGNO_HANGING_SIGN);
+        addDrop(ModBlocks.ORLEGNO_SAPLING);
 
         addDrop(ModBlocks.ORLEGNO_DOOR, doorDrops(ModBlocks.ORLEGNO_DOOR));
         addDrop(ModBlocks.ORLEGNO_SLAB, slabDrops(ModBlocks.ORLEGNO_SLAB));
 
-        addDrop(ModBlocks.ORLEGNO_LEAVES, leavesDrops(ModBlocks.ORLEGNO_LEAVES, ModBlocks.DEEPSLATE_ETNITE_ORE, 0.0025f)); //TODO
+        addDrop(ModBlocks.ORLEGNO_LEAVES, leavesDrops(ModBlocks.ORLEGNO_LEAVES, ModBlocks.ORLEGNO_SAPLING, 0.0025f));
     }
 }
