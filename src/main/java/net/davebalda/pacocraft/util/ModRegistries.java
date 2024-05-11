@@ -5,6 +5,7 @@ import net.davebalda.pacocraft.command.EClearCommand;
 import net.davebalda.pacocraft.command.HealCommand;
 import net.davebalda.pacocraft.entity.ModEntities;
 import net.davebalda.pacocraft.entity.custom.GiangolemEntity;
+import net.davebalda.pacocraft.entity.custom.ObsidianGolemEntity;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
@@ -43,5 +44,6 @@ public class ModRegistries {
 
     private static void registerEntities(){
         FabricDefaultAttributeRegistry.register(ModEntities.GIANGOLEM, GiangolemEntity.createGiangolemAttributes());
+        FabricDefaultAttributeRegistry.register(ModEntities.OBSIDIAN_GOLEM, ObsidianGolemEntity.createObsidianGolemAttributes());
     }
 }

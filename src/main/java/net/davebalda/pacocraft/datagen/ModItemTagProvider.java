@@ -73,5 +73,6 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.HANGING_SIGNS)
                 .add(ModItems.ORLEGNO_HANGING_SIGN);
+
     }
 }

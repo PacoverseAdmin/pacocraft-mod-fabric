@@ -1,4 +1,4 @@
-// 1.20.4	2024-05-07T15:37:39.4679362	Paco Craft/World Gen
+// 1.20.4	2024-05-11T19:44:46.7524076	Paco Craft/World Gen
 c38420206592ba2773a313143eb908a9888c7efe data\pacocraft\worldgen\configured_feature\etnite_ore.json
 38180f972aade435e38d3b7f613a5bce57312bf8 data\pacocraft\worldgen\placed_feature\nether_palermium_ore_placed.json
 f170825ecacbf7bc7c26dafca4797d0e28b273ae data\pacocraft\worldgen\configured_feature\palermium_ore.json
@@ -6,4 +6,5 @@ f170825ecacbf7bc7c26dafca4797d0e28b273ae data\pacocraft\worldgen\configured_feat
 b2bfff2f5989e1b70148a4ffaf2b106bdb06f88e data\pacocraft\worldgen\placed_feature\etnite_ore_placed.json
 48ebc4324678088d0b91ef00fa5ab7fa5145f189 data\pacocraft\worldgen\configured_feature\nether_palermium_ore.json
 af7b0c8283bb4fdcc35dda38aef187a27bebe4e5 data\pacocraft\worldgen\placed_feature\orlegno_placed.json
-38362fb7a2382c3973deae021fd6d90005c05003 data\pacocraft\worldgen\configured_feature\orlegno.json
+6dc9ace08b19711d98cd850b6e04a2f568b70260 data\pacocraft\worldgen\configured_feature\orlegno.json
+5cea1b6e1238c92959f1415fbf026ad269a00429 data\pacocraft\worldgen\biome\gorzano.json

@@ -2,6 +2,7 @@ package net.davebalda.pacocraft.world;
 
 import net.davebalda.pacocraft.PacoCraft;
 import net.davebalda.pacocraft.block.ModBlocks;
+import net.davebalda.pacocraft.world.tree.custom.OrlegnoTrunkPlacer;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -10,10 +11,15 @@ import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
+import net.minecraft.world.gen.foliage.LargeOakFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.trunk.BendingTrunkPlacer;
+import net.minecraft.world.gen.trunk.CherryTrunkPlacer;
+import net.minecraft.world.gen.trunk.LargeOakTrunkPlacer;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
 import java.util.List;
@@ -49,10 +55,10 @@ public class ModConfiguredFeatures {
 
         register(context, ORLEGNO_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.ORLEGNO_LOG),
-                new StraightTrunkPlacer(3, 2, 3),
+                new LargeOakTrunkPlacer(4, 7, 2),
                 BlockStateProvider.of(ModBlocks.ORLEGNO_LEAVES),
-                new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 2),
-                new TwoLayersFeatureSize(0, 0, 1)).ignoreVines()
+                new LargeOakFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(4), 4),
+                new TwoLayersFeatureSize(0, 0, 0)).ignoreVines()
                 .build());
     }
 

@@ -8,4 +8,7 @@ public class ModModelLayers {
     public static final EntityModelLayer GIANGOLEM =
             new EntityModelLayer(new Identifier(PacoCraft.MOD_ID, "giangolem"), "main");
 
+    public static final EntityModelLayer OBSIDIANGOLEM =
+            new EntityModelLayer(new Identifier(PacoCraft.MOD_ID, "obsidiangolem"), "main");
+
 }

@@ -2,7 +2,7 @@
 // Exported for Minecraft version 1.17+ for Yarn
 // Paste this class into your mod and generate all required imports
 
-package net.davebalda.pacocraft.entity.client;
+package net.davebalda.pacocraft.entity.client.giangolem;
 
 import net.davebalda.pacocraft.entity.animation.ModAnimations;
 import net.davebalda.pacocraft.entity.custom.GiangolemEntity;

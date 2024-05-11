@@ -1,6 +1,6 @@
 package net.davebalda.pacocraft.entity.custom;
 
-import net.davebalda.pacocraft.entity.ai.GiangolemAttackGoal;
+import net.davebalda.pacocraft.entity.ai.ObsidianGolemAttackGoal;
 import net.minecraft.entity.AnimationState;
 import net.minecraft.entity.EntityPose;
 import net.minecraft.entity.EntityType;
@@ -22,34 +22,51 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class GiangolemEntity extends GolemEntity{
-
+public class ObsidianGolemEntity extends GolemEntity {
     private static final TrackedData<Boolean> ATTACKING =
-            DataTracker.registerData(GiangolemEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
+            DataTracker.registerData(ObsidianGolemEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
+
+    public final AnimationState idleAnimationState = new AnimationState();
+    private int idleAnimationTimeout = 0;
+
+    public final AnimationState sprintingAnimationState = new AnimationState();
 
     public final AnimationState attackAnimationState = new AnimationState();
     public int attackAnimationTimeout = 0;
 
-    public GiangolemEntity(EntityType<? extends GolemEntity> entityType, World world) {
+    public ObsidianGolemEntity(EntityType<? extends GolemEntity> entityType, World world) {
         super(entityType, world);
     }
 
-    public static DefaultAttributeContainer.Builder createGiangolemAttributes(){
+    public static DefaultAttributeContainer.Builder createObsidianGolemAttributes(){
         return MobEntity.createMobAttributes()
-                .add(EntityAttributes.GENERIC_MAX_HEALTH, 200)
+                .add(EntityAttributes.GENERIC_MAX_HEALTH, 300)
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.25)
                 .add(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE, 1.0)
-                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 20.0)
+                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 25.0)
                 .add(EntityAttributes.GENERIC_ATTACK_SPEED, 0.25);
     }
 
     private void setupAnimationStates(){
-        if(this.isAttacking() && attackAnimationTimeout <= 0){
-            attackAnimationTimeout = 19;
-            attackAnimationState.start(this.age);
-        } else { --this.attackAnimationTimeout; }
+        if(this.idleAnimationTimeout <= 0){
+            this.idleAnimationTimeout = this.random.nextInt(40) + 80;
+            this.idleAnimationState.start(this.age);
+        } else{
+            --this.idleAnimationTimeout;
+        }
 
-        if(!isAttacking()){ attackAnimationState.stop(); }
+        if(this.isAttacking() && attackAnimationTimeout <= 0){
+            attackAnimationTimeout = 29;
+            attackAnimationState.start(this.age);
+            sprintingAnimationState.start(this.age);
+        } else {
+            --this.attackAnimationTimeout;
+        }
+
+        if(!isAttacking()){
+            attackAnimationState.stop();
+            sprintingAnimationState.stop();
+        }
     }
 
     public void setAttacking(boolean attacking){
@@ -84,7 +101,7 @@ public class GiangolemEntity extends GolemEntity{
     @Override
     protected void initGoals() {
         this.goalSelector.add(0, new SwimGoal(this));
-        this.goalSelector.add(1, new GiangolemAttackGoal(this, 1D, true));
+        this.goalSelector.add(1, new ObsidianGolemAttackGoal(this, 1D, true));
         this.goalSelector.add(2, new LookAtEntityGoal(this, PlayerEntity.class, 4f));
         this.goalSelector.add(3, new WanderAroundGoal(this, 0.6, 240, false));
 
@@ -102,6 +119,4 @@ public class GiangolemEntity extends GolemEntity{
     protected SoundEvent getDeathSound() {
         return SoundEvents.ENTITY_IRON_GOLEM_DEATH;
     }
-
-
 }

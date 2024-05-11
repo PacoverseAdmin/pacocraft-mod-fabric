@@ -1,6 +1,7 @@
-package net.davebalda.pacocraft.entity.client;
+package net.davebalda.pacocraft.entity.client.giangolem;
 
 import net.davebalda.pacocraft.PacoCraft;
+import net.davebalda.pacocraft.entity.client.ModModelLayers;
 import net.davebalda.pacocraft.entity.custom.GiangolemEntity;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.EntityRendererFactory;

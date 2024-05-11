@@ -8,6 +8,7 @@ import net.davebalda.pacocraft.painting.ModPaintings;
 import net.davebalda.pacocraft.sound.ModSounds;
 import net.davebalda.pacocraft.util.ModRegistries;
 import net.davebalda.pacocraft.world.gen.ModWorldGeneration;
+import net.davebalda.pacocraft.world.tree.ModTrunkPlacersType;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -26,6 +27,7 @@ public class PacoCraft implements ModInitializer {
 		ModEntities.registerModEntities();
 		ModWorldGeneration.generateModWorldGen();
 		ModPaintings.registerPaintings();
+		ModTrunkPlacersType.registerTrunkPlacers();
 
 		//---- <REGISTRIES> ----//
 		ModRegistries.registerModStuff();

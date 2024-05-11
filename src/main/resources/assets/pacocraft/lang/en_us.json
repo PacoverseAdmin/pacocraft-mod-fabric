@@ -4,6 +4,7 @@
   "item.pacocraft.pure_palermium": "Pure Palermium",
 
   "item.pacocraft.giangolem_spawn_egg": "Giangolem Spawn Egg",
+  "item.pacocraft.obsidiangolem_spawn_egg": "Obsidian Golem Spawn Egg",
 
   "item.pacocraft.music_disc_faccetta_nera": "Music Disc",
   "item.pacocraft.music_disc_faccetta_nera.desc": "Faccetta Nera - Carlo Buti",
@@ -58,5 +59,6 @@
   "itemgroup.pacocraft.tools": "Paco Craft Tools & Armor",
   "itemgroup.pacocraft.blocks": "Paco Craft Blocks",
 
-  "entity.pacocraft.giangolem": "Giangolem"
+  "entity.pacocraft.giangolem": "Giangolem",
+  "entity.pacocraft.obsidian_golem": "Obsidian Golem"
 }

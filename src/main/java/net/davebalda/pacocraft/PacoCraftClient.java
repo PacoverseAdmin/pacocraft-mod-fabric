@@ -3,9 +3,11 @@ package net.davebalda.pacocraft;
 import com.terraformersmc.terraform.sign.SpriteIdentifierRegistry;
 import net.davebalda.pacocraft.block.ModBlocks;
 import net.davebalda.pacocraft.entity.ModEntities;
-import net.davebalda.pacocraft.entity.client.GiangolemModel;
-import net.davebalda.pacocraft.entity.client.GiangolemRenderer;
+import net.davebalda.pacocraft.entity.client.giangolem.GiangolemModel;
+import net.davebalda.pacocraft.entity.client.giangolem.GiangolemRenderer;
 import net.davebalda.pacocraft.entity.client.ModModelLayers;
+import net.davebalda.pacocraft.entity.client.obsigolem.ObsidianGolemModel;
+import net.davebalda.pacocraft.entity.client.obsigolem.ObsidianGolemRenderer;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
@@ -25,6 +27,9 @@ public class PacoCraftClient implements ClientModInitializer {
 
         EntityRendererRegistry.register(ModEntities.GIANGOLEM, GiangolemRenderer::new);
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.GIANGOLEM, GiangolemModel::getTexturedModelData);
+
+        EntityRendererRegistry.register(ModEntities.OBSIDIAN_GOLEM, ObsidianGolemRenderer::new);
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.OBSIDIANGOLEM, ObsidianGolemModel::getTexturedModelData);
 
         SpriteIdentifierRegistry.INSTANCE.addIdentifier(new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, ModBlocks.ORLEGNO_SIGN_TEXTURE));
         SpriteIdentifierRegistry.INSTANCE.addIdentifier(new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, ModBlocks.ORLEGNO_HANGING_SIGN_TEXTURE));
