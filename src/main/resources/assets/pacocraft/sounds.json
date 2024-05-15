@@ -14,5 +14,31 @@
         "stream": true
       }
     ]
+  },
+  "abominem_ambient": {
+    "subtitle": "pacocraft.abominem_ambient",
+    "sounds": [
+      "pacocraft:abominem_ambient_1",
+      "pacocraft:abominem_ambient_2",
+      "pacocraft:abominem_ambient_3"
+    ]
+  },
+  "abominem_alert": {
+    "subtitle": "pacocraft.abominem_alert",
+    "sounds": [
+      "pacocraft:abominem_alert"
+    ]
+  },
+  "abominem_chase": {
+    "subtitle": "pacocraft.abominem_chase",
+    "sounds": [
+      "pacocraft:abominem_chase"
+    ]
+  },
+  "abominem_death": {
+    "subtitle": "pacocraft.abominem_death",
+    "sounds": [
+      "pacocraft:abominem_death"
+    ]
   }
 }

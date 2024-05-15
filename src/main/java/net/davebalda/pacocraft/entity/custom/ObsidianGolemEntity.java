@@ -1,6 +1,8 @@
 package net.davebalda.pacocraft.entity.custom;
 
 import net.davebalda.pacocraft.entity.ai.ObsidianGolemAttackGoal;
+import net.davebalda.pacocraft.item.ModItems;
+import net.davebalda.pacocraft.util.EnchantmentHandler;
 import net.minecraft.entity.AnimationState;
 import net.minecraft.entity.EntityPose;
 import net.minecraft.entity.EntityType;
@@ -11,14 +13,18 @@ import net.minecraft.entity.ai.goal.WanderAroundGoal;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.damage.DamageTypes;
 import net.minecraft.entity.data.DataTracker;
 import net.minecraft.entity.data.TrackedData;
 import net.minecraft.entity.data.TrackedDataHandlerRegistry;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.passive.GolemEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.world.GameRules;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
@@ -118,5 +124,32 @@ public class ObsidianGolemEntity extends GolemEntity {
     @Override
     protected SoundEvent getDeathSound() {
         return SoundEvents.ENTITY_IRON_GOLEM_DEATH;
+    }
+
+    @Override
+    public boolean damage(DamageSource source, float amount) {
+        if(source.isOf(DamageTypes.IN_FIRE) || source.isOf(DamageTypes.ON_FIRE))
+            return false;
+
+        return super.damage(source, amount);
+    }
+
+    @Override
+    public void onDeath(DamageSource damageSource) {
+
+        if(!this.getWorld().isClient() && this.getWorld().getGameRules().getBoolean(GameRules.DO_MOB_LOOT)){
+            // Generates a random number between 0 and 2 and adds 1 to ensure the drops amount
+            // sits between 1 and 3
+            int dropAmount = random.nextInt(3) + 1;
+            int lootingLevel = EnchantmentHandler.getLootingLevel(damageSource);
+
+            if(lootingLevel != 0)
+                dropAmount = dropAmount + (lootingLevel - random.nextInt(1));
+
+            ItemStack itemToDrop = new ItemStack(Items.OBSIDIAN, dropAmount);
+            this.dropStack(itemToDrop);
+        }
+
+        super.onDeath(damageSource);
     }
 }

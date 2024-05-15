@@ -1,6 +1,9 @@
 package net.davebalda.pacocraft.entity.custom;
 
 import net.davebalda.pacocraft.entity.ai.GiangolemAttackGoal;
+import net.davebalda.pacocraft.item.ModItems;
+import net.davebalda.pacocraft.util.EnchantmentHandler;
+import net.davebalda.pacocraft.util.ModRegistries;
 import net.minecraft.entity.AnimationState;
 import net.minecraft.entity.EntityPose;
 import net.minecraft.entity.EntityType;
@@ -17,8 +20,10 @@ import net.minecraft.entity.data.TrackedDataHandlerRegistry;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.passive.GolemEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.world.GameRules;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
@@ -103,5 +108,22 @@ public class GiangolemEntity extends GolemEntity{
         return SoundEvents.ENTITY_IRON_GOLEM_DEATH;
     }
 
+    @Override
+    public void onDeath(DamageSource damageSource) {
 
+        if(!this.getWorld().isClient() && this.getWorld().getGameRules().getBoolean(GameRules.DO_MOB_LOOT)){
+            // Generates a random number between 0 and 4 and adds 2 to ensure the drops amount
+            // sits between 2 and 6
+            int dropAmount = random.nextInt(5) + 2;
+            int lootingLevel = EnchantmentHandler.getLootingLevel(damageSource);
+
+            if(lootingLevel != 0)
+                dropAmount = dropAmount + (lootingLevel - random.nextInt(1));
+
+            ItemStack itemToDrop = new ItemStack(ModItems.PROTEIN_SHAKE, dropAmount);
+            this.dropStack(itemToDrop);
+        }
+
+        super.onDeath(damageSource);
+    }
 }

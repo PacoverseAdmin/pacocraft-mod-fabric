@@ -4,6 +4,7 @@ import net.davebalda.pacocraft.block.ModBlocks;
 import net.davebalda.pacocraft.command.EClearCommand;
 import net.davebalda.pacocraft.command.HealCommand;
 import net.davebalda.pacocraft.entity.ModEntities;
+import net.davebalda.pacocraft.entity.custom.AbominemEntity;
 import net.davebalda.pacocraft.entity.custom.GiangolemEntity;
 import net.davebalda.pacocraft.entity.custom.ObsidianGolemEntity;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
@@ -45,5 +46,6 @@ public class ModRegistries {
     private static void registerEntities(){
         FabricDefaultAttributeRegistry.register(ModEntities.GIANGOLEM, GiangolemEntity.createGiangolemAttributes());
         FabricDefaultAttributeRegistry.register(ModEntities.OBSIDIAN_GOLEM, ObsidianGolemEntity.createObsidianGolemAttributes());
+        FabricDefaultAttributeRegistry.register(ModEntities.ABOMINEM, AbominemEntity.createAbominemAttributes());
     }
 }

@@ -2,15 +2,11 @@ package net.davebalda.pacocraft.world.biome;
 
 import net.davebalda.pacocraft.PacoCraft;
 import net.davebalda.pacocraft.entity.ModEntities;
-import net.davebalda.pacocraft.sound.ModSounds;
 import net.davebalda.pacocraft.world.ModPlacedFeatures;
-import net.minecraft.client.sound.MusicType;
-import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
-import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.sound.BiomeMoodSound;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.biome.Biome;
@@ -19,7 +15,6 @@ import net.minecraft.world.biome.GenerationSettings;
 import net.minecraft.world.biome.SpawnSettings;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.DefaultBiomeFeatures;
-import net.minecraft.world.gen.feature.VegetationPlacedFeatures;
 
 public class ModBiomes {
     public static final RegistryKey<Biome> GORZANO = RegistryKey.of(RegistryKeys.BIOME,
@@ -41,7 +36,7 @@ public class ModBiomes {
     public static Biome gorzano(Registerable<Biome> context) {
         //MUST FOLLOW GenerationStep.java STEPS!!
         SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
-        spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(ModEntities.GIANGOLEM, 2, 3, 5));
+        spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(ModEntities.GIANGOLEM, 2, 1, 2));
 
         DefaultBiomeFeatures.addFarmAnimals(spawnBuilder);
         DefaultBiomeFeatures.addBatsAndMonsters(spawnBuilder);
@@ -51,7 +46,6 @@ public class ModBiomes {
                         context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
 
         globalOverworldGeneration(biomeBuilder);
-        DefaultBiomeFeatures.addMossyRocks(biomeBuilder);
         DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
         DefaultBiomeFeatures.addExtraGoldOre(biomeBuilder);
 
@@ -69,12 +63,12 @@ public class ModBiomes {
                 .generationSettings(biomeBuilder.build())
                 .spawnSettings(spawnBuilder.build())
                 .effects((new BiomeEffects.Builder())
-                        .waterColor(0xdddae2)
-                        .waterFogColor(0xf2f1f2)
-                        .skyColor(0xc200eb)
+                        .waterColor(0x7ddaff)
+                        .waterFogColor(0x91faf8)
+                        .skyColor(0x59baff)
                         .grassColor(0xcda4f4)
-                        .foliageColor(0xbbb4c5)
-                        .fogColor(0xbcbcbc)
+                        .foliageColor(0x4d0f7)
+                        .fogColor(0xd9dede)
                         .moodSound(BiomeMoodSound.CAVE)
                         .build())
                 .build();

@@ -5,6 +5,7 @@
 
   "item.pacocraft.giangolem_spawn_egg": "Giangolem Spawn Egg",
   "item.pacocraft.obsidiangolem_spawn_egg": "Obsidian Golem Spawn Egg",
+  "item.pacocraft.abominem_spawn_egg": "Abominem Spawn Egg",
 
   "item.pacocraft.music_disc_faccetta_nera": "Music Disc",
   "item.pacocraft.music_disc_faccetta_nera.desc": "Faccetta Nera - Carlo Buti",
@@ -52,13 +53,16 @@
   "block.pacocraft.orlegno_hanging_sign": "Orlegno Hanging Sign",
   "block.pacocraft.orlegno_wall_hanging_sign": "Orlegno Wall Hanging Sign",
 
+  "biome.pacocraft.gorzano": "Gorzano",
+
   "painting.pacocraft.tortelli_panna.title": "Tortelli Alla Panna",
   "painting.pacocraft.tortelli_panna.author": "DaveBalda",
 
-  "itemgroup.pacocraft.items": "Paco Craft Items",
-  "itemgroup.pacocraft.tools": "Paco Craft Tools & Armor",
-  "itemgroup.pacocraft.blocks": "Paco Craft Blocks",
+  "itemgroup.pacocraft.items": "PC: Items",
+  "itemgroup.pacocraft.tools": "PC: Tools & Armor",
+  "itemgroup.pacocraft.blocks": "PC: Blocks",
 
   "entity.pacocraft.giangolem": "Giangolem",
-  "entity.pacocraft.obsidian_golem": "Obsidian Golem"
+  "entity.pacocraft.obsidian_golem": "Obsidian Golem",
+  "entity.pacocraft.abominem": "Abominem"
 }

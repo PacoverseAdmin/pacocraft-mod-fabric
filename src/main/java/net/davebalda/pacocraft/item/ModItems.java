@@ -32,6 +32,8 @@ public class ModItems {
             new SpawnEggItem(ModEntities.GIANGOLEM, 0xf2f5f3, 0x181a19, new FabricItemSettings()));
     public static final Item OBSIDIANGOLEM_SPAWN_EGG = registerItem("obsidiangolem_spawn_egg",
             new SpawnEggItem(ModEntities.OBSIDIAN_GOLEM, 0x451fad, 0xba4c11, new FabricItemSettings()));
+    public static final Item ABOMINEM_SPAWN_EGG = registerItem("abominem_spawn_egg",
+            new SpawnEggItem(ModEntities.ABOMINEM, 0xb8acac, 0xa11e1e, new FabricItemSettings()));
 
     //---- <MOD DISC LIST> ----//
     public static final Item MUSIC_DISC_FACCETTA_NERA = registerItem("music_disc_faccetta_nera",

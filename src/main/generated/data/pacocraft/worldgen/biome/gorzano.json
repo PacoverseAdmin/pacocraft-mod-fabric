@@ -8,8 +8,8 @@
   },
   "downfall": 0.4,
   "effects": {
-    "fog_color": 12369084,
-    "foliage_color": 12301509,
+    "fog_color": 14278366,
+    "foliage_color": 315639,
     "grass_color": 13477108,
     "mood_sound": {
       "block_search_extent": 8,
@@ -17,9 +17,9 @@
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000
     },
-    "sky_color": 12714219,
-    "water_color": 14539490,
-    "water_fog_color": 15921650
+    "sky_color": 5880575,
+    "water_color": 8248063,
+    "water_fog_color": 9566968
   },
   "features": [
     [],
@@ -28,8 +28,7 @@
       "minecraft:lake_lava_surface"
     ],
     [
-      "minecraft:amethyst_geode",
-      "minecraft:forest_rock"
+      "minecraft:amethyst_geode"
     ],
     [
       "minecraft:monster_room",
@@ -100,8 +99,8 @@
     "creature": [
       {
         "type": "pacocraft:giangolem",
-        "maxCount": 5,
-        "minCount": 3,
+        "maxCount": 2,
+        "minCount": 1,
         "weight": 2
       },
       {

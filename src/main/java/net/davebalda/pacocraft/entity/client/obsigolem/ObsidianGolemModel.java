@@ -1,13 +1,11 @@
 package net.davebalda.pacocraft.entity.client.obsigolem;
 
-import net.davebalda.pacocraft.entity.animation.ModAnimations;
+import net.davebalda.pacocraft.entity.animation.obsigolem.ObsidianGolemAnimations;
 import net.davebalda.pacocraft.entity.custom.ObsidianGolemEntity;
 import net.minecraft.client.model.*;
 import net.minecraft.client.render.VertexConsumer;
-import net.minecraft.client.render.entity.model.EntityModel;
 import net.minecraft.client.render.entity.model.SinglePartEntityModel;
 import net.minecraft.client.util.math.MatrixStack;
-import net.minecraft.entity.Entity;
 import net.minecraft.util.math.MathHelper;
 
 public class ObsidianGolemModel<T extends ObsidianGolemEntity> extends SinglePartEntityModel<T> {
@@ -105,10 +103,10 @@ public class ObsidianGolemModel<T extends ObsidianGolemEntity> extends SinglePar
         this.getPart().traverse().forEach(ModelPart::resetTransform);
         this.setHeadAngles(netHeadYaw, headPitch);
 
-        this.animateMovement(ModAnimations.OBSIGOLEM_WALK, limbSwing, limbSwingAmount, 2f, 2.5f);
-        this.updateAnimation(entity.idleAnimationState, ModAnimations.OBSIGOLEM_IDLE, ageInTicks, 1f);
-        this.updateAnimation(entity.attackAnimationState, ModAnimations.OBSIGOLEM_ATTACK, ageInTicks, 1f);
-        this.updateAnimation(entity.sprintingAnimationState, ModAnimations.OBSIGOLEM_SPRINT, ageInTicks, 1f);
+        this.animateMovement(ObsidianGolemAnimations.OBSIGOLEM_WALK, limbSwing, limbSwingAmount, 2f, 2.5f);
+        this.updateAnimation(entity.idleAnimationState, ObsidianGolemAnimations.OBSIGOLEM_IDLE, ageInTicks, 1f);
+        this.updateAnimation(entity.attackAnimationState, ObsidianGolemAnimations.OBSIGOLEM_ATTACK, ageInTicks, 1f);
+        this.updateAnimation(entity.sprintingAnimationState, ObsidianGolemAnimations.OBSIGOLEM_SPRINT, ageInTicks, 1f);
     }
     @Override
     public void render(MatrixStack matrices, VertexConsumer vertexConsumer, int light, int overlay, float red, float green, float blue, float alpha) {

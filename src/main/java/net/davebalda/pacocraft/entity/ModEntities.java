@@ -1,6 +1,7 @@
 package net.davebalda.pacocraft.entity;
 
 import net.davebalda.pacocraft.PacoCraft;
+import net.davebalda.pacocraft.entity.custom.AbominemEntity;
 import net.davebalda.pacocraft.entity.custom.GiangolemEntity;
 import net.davebalda.pacocraft.entity.custom.ObsidianGolemEntity;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
@@ -22,6 +23,11 @@ public class ModEntities {
             new Identifier(PacoCraft.MOD_ID, "obsidian_golem"),
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, ObsidianGolemEntity::new)
                     .dimensions(EntityDimensions.fixed(1.7f, 4f)).build());
+
+    public static final EntityType<AbominemEntity> ABOMINEM = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(PacoCraft.MOD_ID, "abominem"),
+            FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, AbominemEntity::new)
+                    .dimensions(EntityDimensions.fixed(2.4f, 4.8f)).build());
 
     public static void registerModEntities(){
         PacoCraft.LOGGER.info("Registering Mod Entities for: " + PacoCraft.MOD_ID);
