@@ -15,6 +15,7 @@ public class ModSounds {
     public static final SoundEvent ABOMINEM_AMBIENT = registerSoundEvent("abominem_ambient");
     public static final SoundEvent ABOMINEM_ALERT = registerSoundEvent("abominem_alert");
     public static final SoundEvent ABOMINEM_DEATH = registerSoundEvent("abominem_death");
+    public static final SoundEvent ABOMINEM_HURT = registerSoundEvent("abominem_hurt");
 
 
     //---- <METHODS> ----//

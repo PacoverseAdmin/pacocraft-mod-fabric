@@ -23,6 +23,14 @@
       "pacocraft:abominem_ambient_3"
     ]
   },
+  "abominem_hurt": {
+    "subtitle": "pacocraft.abominem_hurt",
+    "sounds": [
+      "pacocraft:abominem_hurt_1",
+      "pacocraft:abominem_hurt_2",
+      "pacocraft:abominem_hurt_3"
+    ]
+  },
   "abominem_alert": {
     "subtitle": "pacocraft.abominem_alert",
     "sounds": [
